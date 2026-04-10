@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="container">
+    <span>© {{ 'now' | date: "%Y" }} KnowledgeX Lab</span>
+    <ul class="footer-links">
+      {% if site.lab_github %}
+      <li><a href="{{ site.lab_github }}" target="_blank" rel="noopener">GitHub</a></li>
+      {% endif %}
+      {% if site.lab_twitter %}
+      <li><a href="{{ site.lab_twitter }}" target="_blank" rel="noopener">Twitter</a></li>
+      {% endif %}
+      <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+    </ul>
+  </div>
+</footer>
