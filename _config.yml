@@ -38,3 +38,11 @@ plugins:
 
 markdown: kramdown
 permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - docs/
+  - "*.sh"
+  - README.md
