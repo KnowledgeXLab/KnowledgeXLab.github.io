@@ -1,0 +1,29 @@
+- title: "Towards Continuous Knowledge Graph Completion with Lifelong Learning"
+  authors: "Author A, Author B, Author C"
+  venue: "AAAI 2025"
+  year: 2025
+  tags: ["Knowledge Graph", "Lifelong Learning"]
+  pdf: "https://arxiv.org/"
+  code: "https://github.com/KnowledgeXLab"
+  project: ""
+  highlight: true
+
+- title: "Generative UI: Rethinking Human-Agent Interaction Paradigms"
+  authors: "Author D, Author E"
+  venue: "arXiv 2025"
+  year: 2025
+  tags: ["HCI", "Generative UI"]
+  pdf: "https://arxiv.org/"
+  code: ""
+  project: ""
+  highlight: false
+
+- title: "AGI for Scientific Knowledge Synthesis: A Survey"
+  authors: "Author A, Author F, Author G"
+  venue: "NeurIPS 2024"
+  year: 2024
+  tags: ["AGI", "Survey"]
+  pdf: "https://arxiv.org/"
+  code: "https://github.com/KnowledgeXLab"
+  project: "https://knowledgexlab.github.io/projects/"
+  highlight: true

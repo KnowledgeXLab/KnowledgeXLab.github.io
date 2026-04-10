@@ -1,0 +1,26 @@
+- name: "Project Alpha"
+  description: "Lifelong knowledge graph completion with autonomous learning agents that continuously update and refine structured knowledge."
+  status: "active"
+  tags: ["Knowledge Graph", "Lifelong Learning"]
+  cover_emoji: "🔬"
+  cover_image: ""
+  url: "https://github.com/KnowledgeXLab"
+  papers: ["Towards Continuous Knowledge Graph Completion with Lifelong Learning"]
+
+- name: "Project Beta"
+  description: "Generative UI framework for human-agent co-evolution and next-generation HCI paradigms."
+  status: "active"
+  tags: ["HCI", "Generative UI"]
+  cover_emoji: "🤖"
+  cover_image: ""
+  url: ""
+  papers: ["Generative UI: Rethinking Human-Agent Interaction Paradigms"]
+
+- name: "Project Gamma"
+  description: "Benchmark suite for evaluating AGI systems on scientific knowledge discovery tasks."
+  status: "completed"
+  tags: ["AGI", "Benchmark"]
+  cover_emoji: "📊"
+  cover_image: ""
+  url: ""
+  papers: ["AGI for Scientific Knowledge Synthesis: A Survey"]
