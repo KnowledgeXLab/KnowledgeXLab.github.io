@@ -1,0 +1,40 @@
+title: KnowledgeX Lab
+description: >-
+  Welcome to KnowledgeX Lab! We are excited to explore AGI for knowledge
+  extraction, representation, organization, reasoning, and prediction.
+url: "https://knowledgexlab.github.io"
+baseurl: ""
+
+# Lab info
+lab_email: "lab@university.edu"
+lab_location: "Room 404, CS Building"
+lab_github: "https://github.com/KnowledgeXLab"
+lab_twitter: ""
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: People
+    url: /people/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
+
+# Latest news (shown on home page, most recent first)
+news:
+  - date: "2025.01"
+    text: "Paper accepted at AAAI 2025 🎉"
+  - date: "2024.12"
+    text: "Two PhD positions open — join us!"
+  - date: "2024.11"
+    text: "New project on lifelong learning launched"
+
+plugins:
+  - jekyll-seo-tag
+
+markdown: kramdown
+permalink: pretty
