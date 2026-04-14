@@ -16,7 +16,7 @@ research_directions:
 <!-- Hero -->
 <section class="hero">
   <div class="badge-label">KNOWLEDGE · REASONING · AGI</div>
-  <h1>Exploring AGI for<br>Knowledge Science</h1>
+  <h1>Exploring <em>AGI</em> for<br>Knowledge Science</h1>
   <p>{{ site.description }}</p>
   <div class="hero-ctas">
     <a href="{{ '/publications/' | relative_url }}" class="btn btn-primary">Our Research</a>
