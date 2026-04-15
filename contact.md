@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-description: Get in touch with KnowledgeX Lab — collaborations, student applications, and general inquiries.
+description: Get in touch with KnowledgeXLab — collaborations, student applications, and general inquiries.
 ---
 
 <h1 class="page-title">Get in Touch</h1>

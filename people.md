@@ -1,7 +1,7 @@
 ---
 layout: default
 title: People
-description: Meet the KnowledgeX Lab team — faculty, PhD students, and master students.
+description: Meet the KnowledgeXLab team — faculty, PhD students, and master students.
 ---
 
 <h1 class="page-title">People</h1>
