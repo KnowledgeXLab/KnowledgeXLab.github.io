@@ -14,13 +14,18 @@ research_directions:
 ---
 
 <!-- Hero -->
-<section class="hero">
-  <div class="badge-label">KNOWLEDGE · REASONING · AGI</div>
-  <h1>Exploring <em>AGI</em> for<br>Knowledge Science</h1>
-  <p>{{ site.description }}</p>
-  <div class="hero-ctas">
-    <a href="{{ '/publications/' | relative_url }}" class="btn btn-primary">Our Research</a>
-    <a href="{{ '/people/' | relative_url }}" class="btn btn-secondary">Meet the Team →</a>
+<section class="hero" id="hero-section">
+  <div class="hero-img-wrap" aria-hidden="true">
+    <img src="{{ '/assets/images/hero-lab.png' | relative_url }}" alt="" class="hero-bg-img" onerror="this.style.opacity='0'">
+  </div>
+  <div class="hero-text">
+    <div class="badge-label">KNOWLEDGE · REASONING · AGI</div>
+    <h1>Exploring <em>AGI</em> for<br>Knowledge Science</h1>
+    <p>{{ site.description }}</p>
+    <div class="hero-ctas">
+      <a href="{{ '/publications/' | relative_url }}" class="btn btn-primary">Our Research</a>
+      <a href="{{ '/people/' | relative_url }}" class="btn btn-secondary">Meet the Team →</a>
+    </div>
   </div>
 </section>
 
