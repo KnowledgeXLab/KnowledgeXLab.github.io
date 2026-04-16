@@ -5,3 +5,5 @@ vendor/
 .bundle/
 Gemfile.lock
 .sass-cache/
+docs/
+.superpowers

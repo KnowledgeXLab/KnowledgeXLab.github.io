@@ -1,30 +1,18 @@
-// assets/js/hero.js — scroll-driven hero image expand effect
+// assets/js/hero.js — right-panel → full-screen scroll animation
 (function () {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function () {
-    var section  = document.getElementById('hero-section');
+    var section   = document.getElementById('hero-section');
     if (!section) return;
 
-    var imgWrap  = section.querySelector('.hero-img-wrap');
-    var heroText = section.querySelector('.hero-text');
-    if (!imgWrap || !heroText) return;
+    var imgWrap   = section.querySelector('.hero-img-wrap');
+    var heroInner = section.querySelector('.hero-inner');
+    if (!imgWrap || !heroInner) return;
 
-    var h1el = heroText.querySelector('h1');
-    var pel  = heroText.querySelector('p');
-
+    var h1el  = heroInner.querySelector('h1');
+    var pel   = heroInner.querySelector('p');
     var rafId = null;
-    // Cached offsets (top/bottom of h1..p block relative to hero)
-    var topOffset = 0, bottomOffset = 0;
-
-    function measureOffsets() {
-      if (!h1el || !pel) return;
-      var heroRect = section.getBoundingClientRect();
-      var h1Rect   = h1el.getBoundingClientRect();
-      var pRect    = pel.getBoundingClientRect();
-      topOffset    = h1Rect.top    - heroRect.top;
-      bottomOffset = heroRect.bottom - pRect.bottom;
-    }
 
     function lerp(a, b, t) { return a + (b - a) * t; }
 
@@ -33,31 +21,38 @@
 
       if (window.innerWidth < 640) {
         imgWrap.style.cssText = '';
-        heroText.style.paddingRight = '';
+        section.style.removeProperty('--overlay-opacity');
         return;
       }
 
       var scrollY = window.scrollY || window.pageYOffset;
       var heroH   = section.offsetHeight;
-      var t = Math.max(0, Math.min(1, scrollY / heroH));
+      var t = Math.max(0, Math.min(1, scrollY / (heroH * 0.10)));
 
-      // Width: 38% (right column) → 100% (full bg)
-      imgWrap.style.width = lerp(38, 100, t) + '%';
+      // Measure actual DOM positions at current zoom level — stays correct at any scale
+      var heroRect  = section.getBoundingClientRect();
+      var innerRect = heroInner.getBoundingClientRect();
+      var vw        = window.innerWidth;
 
-      // Opacity: 1 (column) → 0.15 (faded bg)
-      imgWrap.style.opacity = lerp(1, 0.15, t);
+      // right: image aligns with hero-inner's right edge → flush to viewport right
+      var rightOffset = heroRect.right - innerRect.right;
+      imgWrap.style.right = lerp(rightOffset, 0, t) + 'px';
 
-      // top: aligns with h1 → 0 (full bg)
-      imgWrap.style.top    = lerp(topOffset, 0, t) + 'px';
-      // bottom: aligns with end of p → 0 (full bg)
-      imgWrap.style.bottom = lerp(bottomOffset, 0, t) + 'px';
+      // width: 28% of hero-inner actual width → full viewport
+      imgWrap.style.width = lerp(innerRect.width * 0.45, vw, t) + 'px';
 
-      // Border-radius: rounded panel → none
+      // top/bottom: align with h1 top and p bottom → cover full hero
+      var h1Top   = h1el ? h1el.getBoundingClientRect().top    - heroRect.top : 0;
+      var pBottom = pel  ? heroRect.bottom - pel.getBoundingClientRect().bottom : 0;
+      imgWrap.style.top    = lerp(h1Top,    0, t) + 'px';
+      imgWrap.style.bottom = lerp(pBottom,  0, t) + 'px';
+
+      // border-radius: all corners rounded when panel → none when full-screen
       var r = lerp(10, 0, t);
       imgWrap.style.borderRadius = r + 'px';
 
-      // Text right-padding: leave room for image → 0
-      heroText.style.paddingRight = lerp(41, 0, t) + '%';
+      // overlay fades in for text readability
+      section.style.setProperty('--overlay-opacity', t.toFixed(3));
     }
 
     function schedule() {
@@ -65,18 +60,9 @@
       rafId = requestAnimationFrame(update);
     }
 
-    // Recalculate offsets then update on resize
-    window.addEventListener('resize', function () {
-      measureOffsets();
-      schedule();
-    }, { passive: true });
-
     window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule, { passive: true });
 
-    // Initial render: measure after fonts/layout settle
-    requestAnimationFrame(function () {
-      measureOffsets();
-      update();
-    });
+    requestAnimationFrame(update);
   });
 })();
