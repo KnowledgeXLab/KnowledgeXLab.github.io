@@ -1,10 +1,10 @@
 ---
 layout: default
-title: People
+title: Team
 description: Meet the KnowledgeXLab team — faculty, PhD students, and master students.
 ---
 
-<h1 class="page-title">People</h1>
+<h1 class="page-title">Team</h1>
 <p class="page-subtitle">The researchers behind KnowledgeX Lab.</p>
 
 <!-- Principal Investigator -->
@@ -24,17 +24,55 @@ description: Meet the KnowledgeXLab team — faculty, PhD students, and master s
     <div class="role">{{ pi.role }}</div>
     <div class="bio">{{ pi.bio }}</div>
     <div class="person-links">
+      {% if pi.links.homepage and pi.links.homepage != "" %}
+        <a href="{{ pi.links.homepage }}" class="icon-link" target="_blank" rel="noopener" title="Homepage"><i class="fas fa-house"></i></a>
+      {% endif %}
       {% if pi.links.scholar and pi.links.scholar != "" %}
-        <a href="{{ pi.links.scholar }}" class="person-link scholar" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="{{ pi.links.scholar }}" class="icon-link" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
       {% endif %}
       {% if pi.links.github and pi.links.github != "" %}
-        <a href="{{ pi.links.github }}" class="person-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ pi.links.github }}" class="icon-link" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
       {% endif %}
-      {% if pi.links.homepage and pi.links.homepage != "" %}
-        <a href="{{ pi.links.homepage }}" class="person-link" target="_blank" rel="noopener">Homepage</a>
+      {% if pi.links.email and pi.links.email != "" %}
+        <a href="mailto:{{ pi.links.email }}" class="icon-link" title="Email"><i class="fas fa-envelope"></i></a>
       {% endif %}
     </div>
   </div>
+</div>
+{% endif %}
+
+<!-- Faculty -->
+{% assign faculty = site.data.people | where: "role", "Faculty" %}
+{% if faculty.size > 0 %}
+<div class="section-label">Faculty</div>
+<div class="people-grid">
+  {% for person in faculty %}
+  <div class="person-card">
+    <div class="avatar">
+      {% if person.photo and person.photo != "" %}
+        <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}">
+      {% else %}
+        {{ person.photo_emoji | default: "👤" }}
+      {% endif %}
+    </div>
+    <h3>{{ person.name }}</h3>
+    {% if person.research %}<div class="research">{{ person.research }}</div>{% endif %}
+    <div class="person-links">
+      {% if person.links.homepage and person.links.homepage != "" %}
+        <a href="{{ person.links.homepage }}" class="icon-link" target="_blank" rel="noopener" title="Homepage"><i class="fas fa-house"></i></a>
+      {% endif %}
+      {% if person.links.scholar and person.links.scholar != "" %}
+        <a href="{{ person.links.scholar }}" class="icon-link" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      {% endif %}
+      {% if person.links.github and person.links.github != "" %}
+        <a href="{{ person.links.github }}" class="icon-link" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if person.links.email and person.links.email != "" %}
+        <a href="mailto:{{ person.links.email }}" class="icon-link" title="Email"><i class="fas fa-envelope"></i></a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
 </div>
 {% endif %}
 
@@ -56,11 +94,17 @@ description: Meet the KnowledgeXLab team — faculty, PhD students, and master s
     <div class="role">{{ person.role }}{% if person.year %} · {{ person.year }}{% endif %}</div>
     {% if person.research %}<div class="research">{{ person.research }}</div>{% endif %}
     <div class="person-links">
+      {% if person.links.homepage and person.links.homepage != "" %}
+        <a href="{{ person.links.homepage }}" class="icon-link" target="_blank" rel="noopener" title="Homepage"><i class="fas fa-house"></i></a>
+      {% endif %}
       {% if person.links.scholar and person.links.scholar != "" %}
-        <a href="{{ person.links.scholar }}" class="person-link scholar" target="_blank" rel="noopener">Scholar</a>
+        <a href="{{ person.links.scholar }}" class="icon-link" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
       {% endif %}
       {% if person.links.github and person.links.github != "" %}
-        <a href="{{ person.links.github }}" class="person-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ person.links.github }}" class="icon-link" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if person.links.email and person.links.email != "" %}
+        <a href="mailto:{{ person.links.email }}" class="icon-link" title="Email"><i class="fas fa-envelope"></i></a>
       {% endif %}
     </div>
   </div>
@@ -86,8 +130,17 @@ description: Meet the KnowledgeXLab team — faculty, PhD students, and master s
     <div class="role">{{ person.role }}{% if person.year %} · {{ person.year }}{% endif %}</div>
     {% if person.research %}<div class="research">{{ person.research }}</div>{% endif %}
     <div class="person-links">
+      {% if person.links.homepage and person.links.homepage != "" %}
+        <a href="{{ person.links.homepage }}" class="icon-link" target="_blank" rel="noopener" title="Homepage"><i class="fas fa-house"></i></a>
+      {% endif %}
+      {% if person.links.scholar and person.links.scholar != "" %}
+        <a href="{{ person.links.scholar }}" class="icon-link" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      {% endif %}
       {% if person.links.github and person.links.github != "" %}
-        <a href="{{ person.links.github }}" class="person-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ person.links.github }}" class="icon-link" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if person.links.email and person.links.email != "" %}
+        <a href="mailto:{{ person.links.email }}" class="icon-link" title="Email"><i class="fas fa-envelope"></i></a>
       {% endif %}
     </div>
   </div>

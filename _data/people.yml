@@ -1,40 +1,43 @@
-- name: "Prof. Example Name"
-  role: "Principal Investigator"
-  photo: ""
-  photo_emoji: "👤"
-  bio: "Professor at [University]. Research interests: AGI, Knowledge Graphs, Large Language Models, and Reasoning Systems."
+- name: "Licheng Wen"
+  role: "Faculty"
+  photo: "/assets/images/people/wenlicheng.jpg"
+  bio: ""
+  research: ""
   links:
-    scholar: "https://scholar.google.com/"
-    github: "https://github.com/"
-    homepage: ""
-
-- name: "PhD Student A"
-  role: "PhD Student"
-  year: 2022
-  photo: ""
-  photo_emoji: "👤"
-  bio: "Knowledge graph completion and lifelong learning."
-  research: "Knowledge Graphs"
-  links:
-    scholar: ""
-    github: "https://github.com/"
-
-- name: "PhD Student B"
-  role: "PhD Student"
-  year: 2023
-  photo: ""
-  photo_emoji: "👤"
-  bio: "LLM reasoning and chain-of-thought prompting."
-  research: "LLM Reasoning"
-  links:
-    github: "https://github.com/"
-
-- name: "Master Student C"
-  role: "Master Student"
-  year: 2024
-  photo: ""
-  photo_emoji: "👤"
-  bio: "Generative UI and human-agent interaction."
-  research: "Generative UI"
-  links:
+    homepage: "https://wenlc.cn/"
+    scholar: "https://scholar.google.com/citations?user=RNnjXTkAAAAJ"
     github: ""
+    email: "wenlicheng@pjlab.org.cn"
+
+- name: "Qinyuan Qin"
+  role: "Faculty"
+  photo: "/assets/images/people/qinyuanqin.jpg"
+  bio: ""
+  research: ""
+  links:
+    homepage: ""
+    scholar: ""
+    github: "https://github.com/tulongshaonian771"
+    email: "974930108@qq.com"
+
+- name: "Song Mao"
+  role: "Faculty"
+  photo: "/assets/images/people/maosong.jpg"
+  bio: ""
+  research: ""
+  links:
+    homepage: "https://maosong.website/"
+    scholar: "https://scholar.google.com/citations?user=BaqGkQQAAAAJ"
+    github: "https://github.com/MaoSong2022"
+    email: "maosong@pjlab.org.cn"
+
+- name: "Yufan Shen"
+  role: "Faculty"
+  photo: "/assets/images/people/shenyufan.jpg"
+  bio: ""
+  research: ""
+  links:
+    homepage: ""
+    scholar: "https://scholar.google.com/citations?user=BnGLjlgAAAAJ&hl=zh-CN"
+    github: ""
+    email: "shenyfzju@gmail.com"
