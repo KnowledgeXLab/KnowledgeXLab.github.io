@@ -1,18 +1,23 @@
 <nav class="site-nav">
   <div class="container">
     <a href="{{ '/' | relative_url }}" class="logo"><span style="color: var(--accent)">KnowledgeX</span>Lab</span></a>
-    <ul class="nav-links">
-      {% for link in site.nav_links %}
-      <li>
-        <a href="{{ link.url | relative_url }}"
-           {% if page.url == link.url %}class="active"{% endif %}>
-          {{ link.title }}
-        </a>
-      </li>
-      {% endfor %}
-      <li>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
-      </li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        {% for link in site.nav_links %}
+        <li>
+          <a href="{{ link.url | relative_url }}"
+             {% if page.url == link.url %}class="active"{% endif %}>
+            {{ link.title }}
+          </a>
+        </li>
+        {% endfor %}
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
+        </li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>

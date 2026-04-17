@@ -12,10 +12,10 @@ Official homepage for **KnowledgeX Lab**, built with Jekyll and hosted on GitHub
 
 ```bash
 # Install dependencies (first time only)
-PATH="/home/yangxuemeng/anaconda3/bin:$PATH" bundle install
+bundle install
 
 # Start local server
-PATH="/home/yangxuemeng/anaconda3/bin:$PATH" bundle exec jekyll serve
+bundle exec jekyll serve
 ```
 
 Open http://localhost:4000

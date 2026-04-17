@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-description: Ongoing and completed research projects at KnowledgeX Lab.
+description: Ongoing and completed research projects at KnowledgeXLab.
 ---
 
 <h1 class="page-title">Projects</h1>

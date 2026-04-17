@@ -5,7 +5,7 @@ description: Meet the KnowledgeXLab team — faculty, PhD students, and master s
 ---
 
 <h1 class="page-title">Team</h1>
-<p class="page-subtitle">The researchers behind KnowledgeX Lab.</p>
+<p class="page-subtitle">The researchers behind KnowledgeXLab.</p>
 
 <!-- Principal Investigator -->
 {% assign pi = site.data.people | where: "role", "Principal Investigator" | first %}
@@ -48,11 +48,14 @@ description: Meet the KnowledgeXLab team — faculty, PhD students, and master s
 <div class="people-grid">
   {% for person in faculty %}
   <div class="person-card">
-    <div class="avatar">
+    <div class="avatar{% if person.cartoon and person.cartoon != "" %} has-cartoon{% endif %}">
       {% if person.photo and person.photo != "" %}
-        <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}">
+        <img class="photo-real" src="{{ person.photo | relative_url }}" alt="{{ person.name }}">
       {% else %}
         {{ person.photo_emoji | default: "👤" }}
+      {% endif %}
+      {% if person.cartoon and person.cartoon != "" %}
+        <img class="photo-cartoon" src="{{ person.cartoon | relative_url }}" alt="{{ person.name }} cartoon">
       {% endif %}
     </div>
     <h3>{{ person.name }}</h3>

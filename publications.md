@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Publications
-description: Research papers published by KnowledgeX Lab.
+description: Research papers published by KnowledgeXLab.
 ---
 
 <h1 class="page-title">Publications</h1>
