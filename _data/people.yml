@@ -1,3 +1,4 @@
+# ── Faculty ──────────────────────────────────────────────
 - name: "Botan Shi"
   role: "Faculty"
   photo: "/assets/images/people/shibotan.jpg"
@@ -9,6 +10,18 @@
     scholar: "https://scholar.google.com/citations?user=K0PpvLkAAAAJ&hl=en"
     github: ""
     email: "friskit.china@gmail.com"
+
+- name: "Pinlong Cai"
+  role: "Faculty"
+  photo: "/assets/images/people/caipinlong.jpg"
+  cartoon: "/assets/images/cartoon/caipinlong.jpeg"
+  bio: ""
+  research: ""
+  links:
+    homepage: "https://caipinlong.top/"
+    scholar: ""
+    github: ""
+    email: "caipinlong@pjlab.org.cn"
 
 - name: "Xinyu Cai"
   role: "Faculty"
@@ -46,6 +59,18 @@
     github: ""
     email: "dengnianchen@pjlab.org.cn"
 
+- name: "Min Dou"
+  role: "Faculty"
+  photo: "/assets/images/people/doumin.jpg"
+  cartoon: "/assets/images/cartoon/doumin.jpeg"
+  bio: ""
+  research: ""
+  links:
+    homepage: ""
+    scholar: ""
+    github: ""
+    email: "doumin@pjlab.org.cn"
+
 - name: "Song Mao"
   role: "Faculty"
   photo: "/assets/images/people/maosong.jpg"
@@ -81,6 +106,18 @@
     scholar: "https://scholar.google.com/citations?user=BnGLjlgAAAAJ&hl=zh-CN"
     github: ""
     email: "shenyfzju@gmail.com"
+
+- name: "Ding Wang"
+  role: "Faculty"
+  photo: "/assets/images/people/wangding.jpg"
+  cartoon: "/assets/images/cartoon/wangding.jpeg"
+  bio: ""
+  research: ""
+  links:
+    homepage: ""
+    scholar: ""
+    github: ""
+    email: "wangding@pjlab.org.cn"
 
 - name: "Licheng Wen"
   role: "Faculty"
@@ -129,3 +166,40 @@
     scholar: "https://scholar.google.com/citations?user=fb_WgAEAAAAJ&hl=en"
     github: "https://github.com/PrinceVictor"
     email: "zhouhongbin@pjlab.org.cn"
+
+# ── Joint Ph.D. ──────────────────────────────────────────
+- name: "Daocheng Fu"
+  role: "Joint Ph.D."
+  photo: "/assets/images/people/fudaocheng.jpg"
+  cartoon: "/assets/images/cartoon/fudaocheng.jpeg"
+  bio: ""
+  research: ""
+  links:
+    homepage: "https://fudaocheng.github.io/AcademicPage/"
+    scholar: "https://scholar.google.com/citations?user=vIU6eHYAAAAJ&hl=zh-CN"
+    github: "https://github.com/fudaocheng"
+    email: "fudaocheng@pjlab.org.cn"
+
+- name: "Rong Wu"
+  role: "Joint Ph.D."
+  photo: "/assets/images/people/wurong.jpg"
+  cartoon: "/assets/images/cartoon/wurong.jpeg"
+  bio: ""
+  research: ""
+  links:
+    homepage: ""
+    scholar: "https://scholar.google.com/citations?user=CWLwlJwAAAAJ&hl=zh-CN"
+    github: "https://github.com/Edaizi"
+    email: "wurong1159@zju.edu.cn"
+
+- name: "Hairong Zhang"
+  role: "Joint Ph.D."
+  photo: "/assets/images/people/zhanghairong.jpg"
+  cartoon: "/assets/images/cartoon/zhanghairong.jpeg"
+  bio: ""
+  research: ""
+  links:
+    homepage: ""
+    scholar: ""
+    github: ""
+    email: "zhanghairong@pjlab.org.cn"
