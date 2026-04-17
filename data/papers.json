@@ -1,0 +1,372 @@
+[
+  {
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "San Zhang 1;\nSi Li 2;\n",
+    "录用类型": [
+      "Preprint（录用后请更新）"
+    ],
+    "是否为团队主导工作": true,
+    "期刊/会议": "ICLR-2026",
+    "论文标题": "标题示例",
+    "论文状态": "已投稿并挂arXiv"
+  },
+  {
+    "Bibtex": "@inproceedings{yang2026towards,\n  title={Towards Self-Evolving Agents: Enabling Autonomy through Interactive Experience Refinement},\n  author={Yang, Cheng and Yang, Xuemeng and Wen, Licheng and Fu, Daocheng and Mei, Jianbiao and Wu, Rong and Cai, Pinlong and Shen, Yufan and Deng, Nianchen and Xu, Jia and Shi, Botian and Qiao, Yu and Li, Haifeng},\n  booktitle={Findings of the Association for Computational Linguistics: ACL 2026},\n  year={2026},\n  publisher={Association for Computational Linguistics},\n}",
+    "Github仓库链接": {
+      "link": "https://openreview.net/pdf?id=nu2tOJgxPi",
+      "text": "https://openreview.net/pdf?id=nu2tOJgxPi"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2510.08002",
+      "text": "https://arxiv.org/abs/2510.08002"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Cheng Yang 1,2,*;\nXuemeng Yang 2,* ;\nLicheng Wen 2,4,6,*; \nDaocheng Fu 3,2;\nJianbiao Mei 5,2;\nRong Wu 5,2;\nPinlong Cai 2;\nYufan Shen 2;\nNianchen Deng 2; \nJia Xu 2;\nBotian Shi 2,^ ;\nYu Qiao 2;\nHaifeng Li 1,^",
+    "刊印链接": {
+      "link": "https://openreview.net/pdf?id=nu2tOJgxPi",
+      "text": "https://openreview.net/pdf?id=nu2tOJgxPi"
+    },
+    "单位信息（每个单位一行，分号换行）": "1 Central South University;\n2 Shanghai Artificial Intelligence Laboratory; \n3 Fudan University;\n4 Shanghai Innovation Institute;\n5 Zhejiang University; \n6 Shanghai Jiao Tong University",
+    "录用类型": [
+      "Findings"
+    ],
+    "摘要": "Large Language Models often struggle with complex, multi-step operational tasks because they remain static during inference and cannot learn from past experience. To address this, we propose MUSE, a framework that enables iterative self-improvement through a hierarchical Memory Module. MUSE organizes cross-domain insights to facilitate the orchestration of long-horizon workflows. The core of our approach is an autonomous post-execution critique mechanism: after completing each sub-task, the system analyzes its operational logs and distills raw execution data into structured, reusable knowledge. This allows the agent to evolve dynamically rather than relying on fixed parameters. Evaluated on the rigorous TAC productivity benchmark, MUSE achieves new state-of-the-art results, significantly outperforming previous methods using only the streamlined Gemini-2.5 Flash model. Our analysis demonstrates that MUSE’s performance scales with the accumulation of insights and exhibits strong cross-task transferability, marking a key step toward autonomous systems capable of lifelong learning in professional environments. Demo videos can be found in our supplementary materials.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "ACL-2026",
+    "记录创建日期": 1775750400000,
+    "论文pdf": [
+      {
+        "file_token": "Td5lbmdeMoAbhbxOu4TcJkhInRh",
+        "name": "2510.08002v1.pdf",
+        "size": 4475156,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=Td5lbmdeMoAbhbxOu4TcJkhInRh",
+        "type": "application/pdf",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/Td5lbmdeMoAbhbxOu4TcJkhInRh/download"
+      }
+    ],
+    "论文标题": "Towards Self-Evolving Agents: Enabling Autonomy through Interactive Experience Refinement",
+    "论文状态": "已录用",
+    "责任人": [
+      {
+        "email": "yangxuemeng@pjlab.org.cn",
+        "en_name": "杨雪梦",
+        "id": "ou_4894b11e0a99edbf65cc82679f993880",
+        "name": "杨雪梦"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2510.08002.png"
+  },
+  {
+    "Bibtex": "@inproceedings{fu2026agentfirstday,\n  title = {The Agent's First Day: Benchmarking Learning, Exploration, and Scheduling in the Workplace Scenarios},\n  author = {Fu*, Daocheng and Mei*, Jianbiao and Wu*, Rong and Yang, Xuemeng and Xu, Jia and Wang, Ding and Cai, Pinlong and Liu, Yong and Wen, Licheng and Shi, Botian},\n  journal = {Findings of the Association for Computational Linguistics (ACL)},\n  year = {2026},\n}",
+    "Github仓库链接": {
+      "link": "https://github.com/KnowledgeXLab/EvoEnv",
+      "text": "https://github.com/KnowledgeXLab/EvoEnv"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/pdf/2601.08173",
+      "text": "https://arxiv.org/pdf/2601.08173"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Daocheng Fu1,2,*, Jianbiao Mei3,2,* , Rong Wu3,2,* , Xuemeng Yang2,*, Jia Xu2 , Ding Wang2 , Pinlong Cai 2 , Yong Liu3,^ , Licheng Wen2,4,5,^ , Botian Shi2,^",
+    "单位信息（每个单位一行，分号换行）": "1 Fudan University, 2 Shanghai AI Laboratory, 3 Zhejiang University, 4 Shanghai Innovation Institute, 5 Shanghai Jiao Tong University",
+    "录用类型": [
+      "Findings"
+    ],
+    "摘要": "The rapid evolution of Multi-modal Large Language Models (MLLMs) has advanced workflow automation; however, existing research mainly targets performance upper bounds in static environments, overlooking robustness for stochastic real-world deployment. We identify three key challenges: dynamic task scheduling, active exploration under uncertainty, and continuous learning from experience. To bridge this gap, we introduce a dynamic evaluation environment that simulates a \"trainee\" agent continuously exploring a novel setting. Unlike traditional benchmarks, it evaluates agents along three dimensions: (1) context-aware scheduling for streaming tasks with varying priorities; (2) prudent information acquisition to reduce hallucination via active exploration; and (3) continuous evolution by distilling generalized strategies from rule-based, dynamically generated tasks. Experiments show that cutting-edge agents have significant deficiencies in dynamic environments, especially in active exploration and continual learning. Our work establishes a framework for assessing agent reliability, shifting evaluation from static tests to realistic, production-oriented scenarios.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "ACL-2026",
+    "记录创建日期": 1776182400000,
+    "论文标题": "The Agent's First Day: Benchmarking Learning, Exploration, and Scheduling in the Workplace Scenarios",
+    "论文状态": "已录用",
+    "责任人": [
+      {
+        "email": "wenlicheng@pjlab.org.cn",
+        "en_name": "温力成",
+        "id": "ou_821979fbe056e3db6b89c95261e8c1c0",
+        "name": "温力成"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2601.08173.png"
+  },
+  {
+    "Bibtex": "@article{fu2025researcher,\n  title = {RE-Searcher: Robust Agentic Search with Goal-oriented Planning and Self-reflection},\n  author = {Fu*, Daocheng and Mei*, Jianbiao and Wen*, Licheng and Yang*, Xuemeng and Yang, Cheng and Wu, Rong and Hu, Tao and Li, Siqi and Shen, Yufan and Cai, Xinyu and Cai, Pinlong and Shi, Botian and Liu, Yong and Qiao, Yu},\n  journal = {arXiv preprint arXiv:2509.26048},\n  year = {2025},\n}",
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2509.26048",
+      "text": "https://arxiv.org/abs/2509.26048"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Daocheng Fu*, Jianbiao Mei*, Licheng Wen*, and Xuemeng Yang*, Cheng Yang, Rong Wu, Tao Hu, Siqi Li, Yufan Shen, Xinyu Cai, Pinlong Cai, Botian Shi^, Yong Liu, Yu Qiao",
+    "单位信息（每个单位一行，分号换行）": "1 Fudan University,   2 Shanghai Artificial Intelligence Laboratory, 3 Zhejiang University\n4 Shanghai Innovation Institute, 5 Shanghai Jiao Tong University, 6 Central South University",
+    "录用类型": [
+      "Preprint（录用后请更新）"
+    ],
+    "摘要": "Large language models (LLMs) excel at knowledge-intensive question answering and reasoning, yet their real-world deployment remains constrained by knowledge cutoff, hallucination, and limited interaction modalities. Augmenting LLMs with external search tools helps alleviate these issues, but it also exposes agents to a complex search environment in which small, plausible variations in query formulation can steer reasoning into unproductive trajectories and amplify errors. We present a systematic analysis that quantifies how environmental complexity induces fragile search behaviors and, in turn, degrades overall performance. To address this challenge, we propose a simple yet effective approach to instantiate a search agent, RE-Searcher. During search, RE-Searcher explicitly articulates a concrete search goal and subsequently reflects on whether the retrieved evidence satisfies that goal. This combination of goal-oriented planning and self-reflection enables RE-Searcher to resist spurious cues in complex search environments and perform robust search. Extensive experiments show that our method improves search accuracy and achieves state-of-the-art results. Perturbation studies further demonstrate substantial resilience to noisy or misleading external signals, mitigating the fragility of the search process. We believe these findings offer practical guidance for integrating LLM-powered agents into more complex interactive environments and enabling more autonomous decision-making.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "投稿中",
+    "记录创建日期": 1776182400000,
+    "论文标题": "RE-Searcher: Robust Agentic Search with Goal-oriented Planning and Self-reflection",
+    "责任人": [
+      {
+        "email": "fudaocheng@pjlab.org.cn",
+        "en_name": "付道成",
+        "id": "ou_2d7056d82db1ecc541cd2312b6de69ff",
+        "name": "付道成"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2509.26048.png"
+  },
+  {
+    "Bibtex": "@misc{mei2025o2searchersearchingbasedagentmodel,\n      title={O$^2$-Searcher: A Searching-based Agent Model for Open-Domain Open-Ended Question Answering}, \n      author={Jianbiao Mei and Tao Hu and Daocheng Fu and Licheng Wen and Xuemeng Yang and Rong Wu and Pinlong Cai and Xinyu Cai and Xing Gao and Yu Yang and Chengjun Xie and Botian Shi and Yong Liu and Yu Qiao},\n      year={2025},\n      eprint={2505.16582},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2505.16582}, \n}",
+    "Github仓库链接": {
+      "link": "https://github.com/KnowledgeXLab/O2-Searcher",
+      "text": "https://github.com/KnowledgeXLab/O2-Searcher"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2505.16582v2",
+      "text": "https://arxiv.org/abs/2505.16582v2"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Jianbiao Mei*, Tao Hu*, Daocheng Fu*, Licheng Wen, Xuemeng Yang, Rong Wu, Pinlong Cai, Xinyu Cai, Xing Gao, Yu Yang, Chengjun Xie, Botian Shi^, Yong Liu^, Yu Qiao",
+    "单位信息（每个单位一行，分号换行）": "1 Zhejiang University,  2 Shanghai Artificial Intelligence Laboratory, 3 University of Science and Technology of China, 4 Fudan University, 5 State Key Laboratory of Industrial Control Technology",
+    "录用类型": [
+      "Preprint（录用后请更新）"
+    ],
+    "摘要": "Large Language Models (LLMs), despite their advancements, are fundamentally limited by their static parametric knowledge, hindering performance on tasks requiring open-domain up-to-date information. While enabling LLMs to interact with external knowledge environments is a promising solution, current efforts primarily address closed-end problems. Open-ended questions, which characterized by lacking a standard answer or providing non-unique and diverse answers, remain underexplored. To bridge this gap, we present O-Searcher, a novel search agent leveraging reinforcement learning to effectively tackle both open-ended and closed-ended questions in the open domain. O-Searcher leverages an efficient, locally simulated search environment for dynamic knowledge acquisition, effectively decoupling the external world knowledge from model's sophisticated reasoning processes. It employs a unified training mechanism with meticulously designed reward functions, enabling the agent to identify problem types and adapt different answer generation strategies. Furthermore, to evaluate performance on complex open-ended tasks, we construct O-QA, a high-quality benchmark featuring 300 manually curated, multi-domain open-ended questions with associated web page caches. Extensive experiments show that O-Searcher, using only a 3B model, significantly surpasses leading LLM agents on O-QA. It also achieves SOTA results on various closed-ended QA benchmarks against similarly-sized models, while performing on par with much larger ones.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "投稿中",
+    "记录创建日期": 1776268800000,
+    "论文标题": "O2-Searcher: A Searching-based Agent Model for Open-Domain Open-Ended Question Answering",
+    "责任人": [
+      {
+        "email": "meijianbiao@pjlab.org.cn",
+        "en_name": "梅剑标",
+        "id": "ou_74b580b9940052a733b858083c602b33",
+        "name": "梅剑标"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2505.16582.png"
+  },
+  {
+    "Bibtex": "@misc{deng2025internspatial,\n      title={InternSpatial: A Comprehensive Dataset for Spatial Reasoning in Vision-Language Models}, \n      author={Nianchen Deng and Lixin Gu and Shenglong Ye and Yinan He and Zhe Chen and Songze Li and Haomin Wang and Xingguang Wei and Tianshuo Yang and Min Dou and Tong He and Wenqi Shao and Kaipeng Zhang and Yi Wang and Botian Shi and Yanting Zhang and Jifeng Dai and Yu Qiao and Hongjie Zhang and Wenhai Wang},\n      year={2025},\n      eprint={2506.18385},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV},\n      url={https://arxiv.org/abs/2506.18385}, \n}",
+    "Github仓库链接": {
+      "link": "https://github.com/dengnianchen/intern-spatial",
+      "text": "https://github.com/dengnianchen/intern-spatial"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2506.18385",
+      "text": "https://arxiv.org/abs/2506.18385"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Nianchen Deng 1,*;\nLixin Gu 1,*;\nShenglong Ye 1,*;\nYinan He 1;\nZhe Chen 1,2;\nSongze Li 1,3;\nHaomin Wang 1,3;\nJinhui Yin 1,2;\nQi Wei 1,2;\nTianshuo Yang 1;\nMin Dou 1;\nTong He 1;\nWenqi Shao 1;\nKaipeng Zhang 1;\nYi Wang 1;\nBotian Shi 1;\nYanting Zhang 4;\nJifeng Dai 1,5;\nYu Qiao 1;\nWenhai Wang 1,6,^;\nHongjie Zhang 1,^;",
+    "单位信息（每个单位一行，分号换行）": "1. Shanghai AI Laboratory;\n2. Nanjing University;\n3. Shanghai Jiao Tong University;\n4. Donghua University;\n5. Tsinghua University;\n6. The Chinese University of Hong Kong;",
+    "录用类型": [
+      "Poster"
+    ],
+    "摘要": "Recent benchmarks and datasets have been proposed to improve spatial reasoning in vision-language models (VLMs), yet existing open resources remain constrained by limited scale, narrow visual diversity, and restricted instruction expressiveness. To address these gaps, we present InternSpatial---the largest open-source dataset for spatial reasoning in VLMs---alongside InternSpatial-Bench, a comprehensive evaluation benchmark designed to assess spatial understanding across diverse instruction formats. InternSpatial contains 12 million question-answer(QA) pairs covering both single-view and multi-view scenarios, sourced from varied visual environments and supporting 19 distinct instruction formats that mirror real-world query patterns. InternSpatial-Bench aims to single-view assessment and also extends multi-view reasoning through a novel rotation estimation task. Experimental validation demonstrates that models trained on \\trainset achieve substantial performance improvement of 12.1% on InternSpatial-Bench and 10.7% on VSI-Bench, while preserving competitive performance on general-purpose benchmarks. We expect these resources can advance the development of spatially-capable VLMs for practical applications in robotics and embodied AI systems. Our codes and datasets are publicly available at https://github.com/dengnianchen/intern-spatial.",
+    "是否为团队主导工作": false,
+    "期刊/会议": "ICLR-2026",
+    "记录创建日期": 1776268800000,
+    "论文标题": "InternSpatial: A Comprehensive Dataset for Spatial Reasoning in Vision-Language Models",
+    "论文状态": "已录用",
+    "责任人": [
+      {
+        "email": "dengnianchen@pjlab.org.cn",
+        "en_name": "邓念晨",
+        "id": "ou_f6ffc90f46f0c01a4876cf3dbb8174bd",
+        "name": "邓念晨"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2506.18385.png"
+  },
+  {
+    "Bibtex": "@article{chen2025iwr,\n  title={IWR-Bench: Can LVLMs reconstruct interactive webpage from a user interaction video?},\n  author={Chen, Yang and Liu, Minghao and Shen, Yufan and Li, Yunwen and Huang, Tianyuan and Fang, Xinyu and Zheng, Tianyu and Huang, Wenxuan and Yang, Cheng and Fu, Daocheng and others},\n  journal={arXiv preprint arXiv:2509.24709},\n  year={2025}\n}",
+    "Github仓库链接": {
+      "link": "https://github.com/SIGMME/IWR-Bench",
+      "text": "https://github.com/SIGMME/IWR-Bench"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/pdf/2509.24709",
+      "text": "https://arxiv.org/pdf/2509.24709"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yang Chen, Minghao Liu, Yufan Shen, Yunwen Li, Tianyuan Huang, Xinyu Fang, Tianyu Zheng, Wenxuan Huang, Cheng Yang, Daocheng Fu, Jianbiao Mei, Rong Wu, Yunfei Zhao, Licheng Wen, Xuemeng Yang, Song Mao, Qunshu Lin, Zhi Yu, Yongliang Shen, Yu Qiao, Botian Shi",
+    "单位信息（每个单位一行，分号换行）": "1. Shanghai AI Laboratory;\n2. Zhejiang Universtiy;\n3. 2077AI;\n4. M-A-P;\n5. Chinese University of Hong Kong(shenzhen);\n6. Chinese University of Hong Kong\n7. Central South University\n8. Fudan University",
+    "录用类型": [
+      "Poster"
+    ],
+    "摘要": "The webpage-to-code task requires models to understand visual representations of\nwebpages and generate corresponding code. However, existing benchmarks primarily focus on static screenshot-to-code tasks, thereby overlooking the dynamic\ninteractions fundamental to real-world web applications. To address this limitation, this paper introduces IWR-Bench, a novel benchmark for evaluating the\ncapabilities of Large Vision-Language Models (LVLMs) in interactive webpage\nreconstruction from video. IWR-Bench comprises 113 meticulously curated tasks\nfrom 100 real-world websites, with 1,001 actions and featuring diverse interaction complexities (e.g., web games), visual styles, and domains. Aligning with\nstandard web development practices, each task includes not only user interaction\nvideos but also all crawled static assets (e.g., images, videos). This benchmark\nevaluates models on two fundamental challenges: comprehensive multi-modal\nreasoning to infer interaction logic from video and assets, and advanced code\ngeneration to translate this logic into functional code. An agent-as-a-judge framework with a comprehensive metric system automatically assesses the functional\ncorrectness and visual fidelity of generated webpages. Extensive experiments on\n28 LVLMs reveal a significant challenge: the best model achieves an overall score\nof only 36.35%, as functional correctness (24.39% IFS) lags significantly behind\nvisual fidelity (64.25% VFS). These results highlight critical limitations in current\nmodels’ ability to reason about temporal dynamics and synthesize event-driven\nlogic, establishing IWR-Bench as a challenging frontier for vision-language research. The benchmark and evaluation code will be made publicly available athttps://github.com/SIGMME/IWR-Bench.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "ICLR-2026",
+    "记录创建日期": 1776268800000,
+    "论文标题": "IWR-Bench: Can LVLMs reconstruct interactive webpage from a user interaction video?\n",
+    "论文状态": "已录用",
+    "责任人": [
+      {
+        "email": "shenyufan@pjlab.org.cn",
+        "en_name": "沈宇帆",
+        "id": "ou_7b10a35b8b8655e16e76f5536a5a054a",
+        "name": "沈宇帆"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2509.24709.png"
+  },
+  {
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yufei Gao, Jiaying Fei, Nuo Chen, Ruirui Chen, Guohang Yan, Yunshi Lan, Botian Shi",
+    "单位信息（每个单位一行，分号换行）": "1 Shanghai AI Laboratory\n2 East China Normal University\n3 The Chinese University of Hong Kong, Shenzhen\n4\nInstitute of High Performance Computing, A*STAR",
+    "摘要": "Multimodal Large Language Models (MLLMs) perform strongly in high-resource languages, yet their effectiveness drops sharply in low-resource settings, largely due to the scarcity of aligned and culturally informative multimodal data. Existing multilingual enhancement approaches predominantly rely on text-only resources or translation-based pipelines, which improve surface-level fluency but often fail to capture culturally specific visual knowledge.\nIn this work, we present MELLA, a large-scale multimodal multilingual dataset designed to support both linguistic fluency and culturally grounded visual understanding in low-resource languages. MELLA is constructed using a dual-source data curation strategy that combines (i) native web image-alt-text pairs, which provide in-context, culture-specific visual-textual alignments, and (ii) high-quality image descriptions generated in a high-resource language and translated into target languages to ensure linguistic richness and structural completeness. Rather than expanding multilingual coverage alone, this design explicitly disentangles two complementary learning signals that are conflated in existing multilingual multimodal datasets.\nMELLA covers eight low-resource languages and contains 6.8M image-text pairs spanning diverse domains and visual categories. Through controlled diagnostic fine-tuning experiments on multiple MLLM backbones, we show that training on MELLA mitigates the cultural hallucination gap, often manifested as culturally “thin“ descriptions, by enabling models to recognize and articulate culturally specific entities that are systematically overlooked by translation-centric pipelines. Our findings underscore the central role of data alignment, rather than model modification, in achieving culturally grounded multimodal understanding for low-resource languages.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "投稿中",
+    "记录创建日期": 1776268800000,
+    "论文标题": "MELLA: Bridging Linguistic Capability and Cultural Groundedness for Low-Resource Language MLLMs",
+    "责任人": [
+      {
+        "email": "yanguohang@pjlab.org.cn",
+        "en_name": "闫国行",
+        "id": "ou_33cfcf2048b911c367917bf320f12862",
+        "name": "闫国行"
+      }
+    ]
+  },
+  {
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Hongwei Zhang, Zehui Ling, Ruicheng Zhu, Yue Zhang, ShaoxiongGuo, Jinrong Wen, Pinlong Cai, Botian Shi, Guohang Yan",
+    "单位信息（每个单位一行，分号换行）": "1 Shanghai AI Laboratory\n2 East China Normal University",
+    "摘要": "Retrieval-Augmented Generation (RAG) over visually rich long documents is limited by an independent matching paradigm, where visual retrievers score each page in isolation based on query–page similarity. This approach systematically misses evidence-containing pages whose decisive signals are local or only revealed through document associations, leaving the downstream Large Vision-Language Model (LVLM) with incomplete context. To address this, we propose PropRAG, a training-free retrieval framework that recovers such pages via seeded relevance diffusion. PropRAG represents a document as a multimodal chunk–page heterogeneous graph encoded with hierarchical, sequential, and similarity links. Given a query, PropRAG synergizes dense visual page priors with sparse high-confidence chunk seeds and executes a single Personalized PageRank pass to propagate relevance and re-rank pages. Experiments on MMLongBench and LongDocURL demonstrate consistent gains in retrieval metrics and downstream QA accuracy over direct visual retrieval and complex agentic frameworks, with negligible impact on total response time.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "投稿中",
+    "记录创建日期": 1776268800000,
+    "论文标题": "PropRAG: Seeded Relevance Diffusion on Chunk–Page Graphs for Long Multimodal Document Retrieval",
+    "责任人": [
+      {
+        "email": "yanguohang@pjlab.org.cn",
+        "en_name": "闫国行",
+        "id": "ou_33cfcf2048b911c367917bf320f12862",
+        "name": "闫国行"
+      }
+    ]
+  },
+  {
+    "Bibtex": "@misc{lei2026memcottesttimescalingmemorydriven,\n      title={MemCoT: Test-Time Scaling through Memory-Driven Chain-of-Thought}, \n      author={Haodong Lei and Junming Liu and Yirong Chen and Ding Wang and Hongsong Wang},\n      year={2026},\n      eprint={2604.08216},\n      archivePrefix={arXiv},\n      primaryClass={cs.MA},\n      url={https://arxiv.org/abs/2604.08216}, \n}",
+    "Github仓库链接": {
+      "link": "https://github.com/Haodong-Lei-Ray/MemCoT",
+      "text": "https://github.com/Haodong-Lei-Ray/MemCoT"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2604.08216",
+      "text": "https://arxiv.org/abs/2604.08216"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Haodong Lei, Junming Liu, Yirong Chen, Ding Wang, Hongsong Wang",
+    "单位信息（每个单位一行，分号换行）": "1 Southeast University\n2 Shanghai AI Laboratory",
+    "录用类型": [
+      "Preprint（录用后请更新）"
+    ],
+    "摘要": "Large Language Models (LLMs) still suffer from severe hallucinations and catastrophic forgetting during causal reasoning over massive, fragmented long contexts. Existing memory mechanisms typically treat retrieval as a static, single-step passive matching process, leading to severe semantic dilution and contextual fragmentation. To overcome these fundamental bottlenecks, we propose MemCoT, a test-time memory scaling framework that redefines the reasoning process by transforming long-context reasoning into an iterative, stateful information search. MemCoT introduces a multi-view long-term memory perception module that enables Zoom-In evidence localization and Zoom-Out contextual expansion, allowing the model to first identify where relevant evidence resides and then reconstruct the surrounding causal structure necessary for reasoning. In addition, MemCoT employs a task-conditioned dual short-term memory system composed of semantic state memory and episodic trajectory memory. This short-term memory records historical search decisions and dynamically guides query decomposition and pruning across iterations. Empirical evaluations demonstrate that MemCoT establishes a state-of-the-art performance. Empowered by MemCoT, several open- and closed-source models achieve SOTA performance on the LoCoMo benchmark and LongMemEval-S benchmark.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "投稿中",
+    "记录创建日期": 1776268800000,
+    "论文pdf": [
+      {
+        "file_token": "FmJobtze3oAaIexgWmzc55hHnig",
+        "name": "MemCoT.pdf",
+        "size": 2331220,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=FmJobtze3oAaIexgWmzc55hHnig",
+        "type": "application/pdf",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/FmJobtze3oAaIexgWmzc55hHnig/download"
+      }
+    ],
+    "论文标题": "MemCoT: Test-Time Scaling through Memory-Driven Chain-of-Thought",
+    "论文状态": "已投稿并挂arXiv",
+    "责任人": [
+      {
+        "email": "leihaodong@pjlab.org.cn",
+        "en_name": "雷浩东",
+        "id": "ou_6b062ced20a3e2633d1b3be928b9728f",
+        "name": "雷浩东"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2604.08216.png"
+  },
+  {
+    "Bibtex": "@article{wu2025evolver,\n  title={Evolver: Self-evolving llm agents through an experience-driven lifecycle},\n  author={Wu, Rong and Wang, Xiaoman and Mei, Jianbiao and Cai, Pinlong and Fu, Daocheng and Yang, Cheng and Wen, Licheng and Yang, Xuemeng and Shen, Yufan and Wang, Yuxin and others},\n  journal={arXiv preprint arXiv:2510.16079},\n  year={2025}\n}\n\n\n\n\n\n",
+    "Github仓库链接": {
+      "link": "https://github.com/KnowledgeXLab/EvolveR",
+      "text": "https://github.com/KnowledgeXLab/EvolveR"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2510.16079",
+      "text": "https://arxiv.org/abs/2510.16079"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Rong Wu 1,2∗;\nXiaoman Wang 3∗;\nJianbiao Mei 1,2;\nPinlong Cai 2;\nDaocheng Fu 2,4; \nCheng Yang 2,5;\nLicheng Wen 2,7,8; \nXuemeng Yang 2; \nYufan Shen 2;\nYuxin Wang 9;\nBotian Shi 2 ^",
+    "单位信息（每个单位一行，分号换行）": "1 Zhejiang University; \n2 Shanghai Artificial Intelligence Laboratory;\n3 East China Normal University;\n4 Fudan University;\n5 Central South University;\n7 Shanghai Innovation Institute;\n8 Shanghai Jiao Tong University;\n9 University of Science and Technology of China",
+    "录用类型": [
+      "Preprint（录用后请更新）"
+    ],
+    "摘要": "Current Large Language Model (LLM) agents show strong performance in tool use, but lack the crucial capability to systematically learn from their own experiences. While existing frameworks mainly focus on mitigating external knowledge gaps, they fail to address a more fundamental limitation: the inability to iteratively refine problem-solving strategies. In this work, we introduce \\textbf{EvolveR}, a framework designed to enable agent to self-improve through a complete, closed-loop experience lifecycle. This lifecycle comprises two key stages: (1) \\textbf{Offline Self-Distillation}, where the agent's interaction trajectories are synthesized into a structured repository of abstract, reusable strategic principles; (2) \\textbf{Online Interaction}, where the agent interacts with tasks and actively retrieves distilled principles to guide its decision-making, accumulating a diverse set of behavioral trajectories. This loop employs a policy reinforcement mechanism to iteratively update the agent based on its performance. We demonstrate the effectiveness of EvolveR on complex multi-hop question-answering benchmarks, where it achieves superior performance over strong agentic baselines. Our work presents a comprehensive blueprint for agents that learn not only from external data but also from the consequences of their own actions, paving the way for more autonomous and continuously improving systems. Code is available at \\textcolor{magenta}{\\url{https://github.com/Edaizi/EvolveR}}.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "投稿中",
+    "记录创建日期": 1776355200000,
+    "论文pdf": [
+      {
+        "file_token": "E55LbIE2mot0NtxyO80cYbWOn1g",
+        "name": "2510.16079v1.pdf",
+        "size": 2933251,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=E55LbIE2mot0NtxyO80cYbWOn1g",
+        "type": "application/pdf",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/E55LbIE2mot0NtxyO80cYbWOn1g/download"
+      }
+    ],
+    "论文标题": "EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle",
+    "论文状态": "已投稿并挂arXiv",
+    "责任人": [
+      {
+        "email": "wurong@pjlab.org.cn",
+        "en_name": "吴荣",
+        "id": "ou_e2c69b87d4cb138c76221ca2f8d5326f",
+        "name": "吴荣"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2510.16079.png"
+  },
+  {
+    "Bibtex": "@article{wu2025kg,\n  title={Kg-traces: Enhancing large language models with knowledge graph-constrained trajectory reasoning and attribution supervision},\n  author={Wu, Rong and Cai, Pinlong and Mei, Jianbiao and Wen, Licheng and Hu, Tao and Yang, Xuemeng and Fu, Daocheng and Shi, Botian},\n  journal={arXiv preprint arXiv:2506.00783},\n  year={2025}\n}\n\n\n\n\n\n",
+    "Github仓库链接": {
+      "link": "https://github.com/KnowledgeXLab/KG-TRACES",
+      "text": "https://github.com/KnowledgeXLab/KG-TRACES"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2506.00783",
+      "text": "https://arxiv.org/abs/2506.00783"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Rong Wu 1,2;\nPinlong Cai 2;\nJianbiao Mei 1,2;\nLicheng Wen 2;\nTao Hu 2,3;\nXuemeng Yang 2;\nDaocheng Fu 2,4;\nBotian Shi 2^",
+    "单位信息（每个单位一行，分号换行）": "1 Zhejiang University;\n2 Shanghai Artificial Intelligence Laboratory;\n3 University of Science and Technology of China;\n4 Fudan University",
+    "录用类型": [
+      "Preprint（录用后请更新）"
+    ],
+    "摘要": "Large language models (LLMs) have made remarkable strides in various natural language processing tasks, but their performance on complex reasoning problems remains hindered by a lack of explainability and trustworthiness. This issue, often manifesting as hallucinations or unattributable reasoning processes, limits their applicability in complex reasoning scenarios. To address this, we propose \\textbf{K}nowledge \\textbf{G}raph-constrained \\textbf{T}rajectory \\textbf{R}easoning \\textbf{A}ttribution and \\textbf{C}hain \\textbf{E}xplanation \\textbf{S}upervision (\\textbf{KG-TRACES}), a novel framework that enhances the reasoning ability of LLMs through explicit supervision over reasoning paths and processes. KG-TRACES jointly supervises the model to: (1) predict symbolic relation paths, (2) predict full triple-level reasoning paths, and (3) generate attribution-aware reasoning processes grounded in the reasoning paths. At inference phase, the model adapts to both KG-available and KG-unavailable scenarios, retrieving reasoning paths from a KG when possible or predicting plausible reasoning paths with only intrinsic knowledge when not. This design enables the model to reason in an explainable and source-attributable pattern. Through extensive experiments on complex reasoning tasks, we demonstrate that KG-TRACES significantly outperforms existing SOTA: it improves Hits@1 by 1.6\\% and F1 by 4.7\\% on WebQSP, and achieves improvements of 4.8\\% in Hits@1 and 2.1\\% in F1 on CWQ. Moreover, we show its transferability to specialized domains such as medicine. By visualizing the intermediate steps of reasoning processes, we further show that the explicit supervision introduced by KG-TRACES leads to more stable and goal-directed reasoning processes, aligning closely with correct answers. Code is available at \\textcolor{magenta}{\\url{https://github.com/Edaizi/KG-TRACES}}.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "投稿中",
+    "记录创建日期": 1776355200000,
+    "论文pdf": [
+      {
+        "file_token": "I88hbWsm3od3MjxmdFQcJKkHnae",
+        "name": "2506.00783v2.pdf",
+        "size": 11472894,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=I88hbWsm3od3MjxmdFQcJKkHnae",
+        "type": "application/pdf",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/I88hbWsm3od3MjxmdFQcJKkHnae/download"
+      }
+    ],
+    "论文标题": "Kg-traces: Enhancing large language models with knowledge graph-constrained trajectory reasoning and attribution supervision",
+    "论文状态": "已投稿并挂arXiv",
+    "责任人": [
+      {
+        "email": "wurong@pjlab.org.cn",
+        "en_name": "吴荣",
+        "id": "ou_e2c69b87d4cb138c76221ca2f8d5326f",
+        "name": "吴荣"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2506.00783.png"
+  },
+  {
+    "记录创建日期": 1776355200000
+  },
+  {
+    "记录创建日期": 1776355200000
+  },
+  {
+    "记录创建日期": 1776355200000
+  }
+]
