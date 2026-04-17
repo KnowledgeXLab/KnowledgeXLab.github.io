@@ -12,6 +12,7 @@
     title:     ['论文标题', 'title', '标题', '题目', '论文', 'paper', 'name'],
     authors:   ['作者信息', '作者', 'author', '参与者'],
     venue:     ['期刊/会议', '期刊', '会议', 'venue', 'conference', 'journal', 'publish', '发表', '来源'],
+    publishedAt: ['论文发表日期', '发表日期', 'publication date', 'published at', 'published', 'date'],
     pdf:       ['arXiv主页', 'arxiv', 'pdf', '链接', 'link', 'url'],
     code:      ['Github仓库链接', 'github', 'code', '代码', 'repo', '仓库'],
     project:   ['刊印链接', 'project', '项目页', '主页', '刊印'],
@@ -51,14 +52,28 @@
       .join(', ');
   }
 
-  function yearFromVenue(venue) {
-    var m = String(venue || '').match(/\b(20\d{2})\b/);
-    return m ? m[1] : '';
+  function yearFromPublishedAt(value) {
+    if (value === null || value === undefined || value === '') return '';
+
+    if (typeof value === 'number' || /^\d+$/.test(String(value).trim())) {
+      var ts = Number(value);
+      if (!Number.isNaN(ts) && ts > 0) {
+        return String(new Date(ts).getUTCFullYear());
+      }
+    }
+
+    var text = String(value).trim();
+    var m = text.match(/\b(20\d{2})\b/);
+    if (m) return m[1];
+
+    var parsed = new Date(text);
+    return Number.isNaN(parsed.getTime()) ? '' : String(parsed.getUTCFullYear());
   }
 
   function normalise(raw, map) {
     var venue   = map.venue   ? (raw[map.venue]   || '') : '';
     var authors = map.authors ? (raw[map.authors]  || '') : '';
+    var publishedAt = map.publishedAt ? (raw[map.publishedAt] || '') : '';
     var tags    = [];
 
     if (map.tags && raw[map.tags]) {
@@ -76,7 +91,7 @@
       title:     map.title     ? (raw[map.title]     || '') : '',
       authors:   cleanAuthors(typeof authors === 'string' ? authors : extractUrl(authors)),
       venue:     typeof venue === 'string' ? venue : extractUrl(venue),
-      year:      yearFromVenue(venue),
+      year:      yearFromPublishedAt(publishedAt),
       pdf:       map.pdf       ? extractUrl(raw[map.pdf])       : '',
       code:      map.code      ? extractUrl(raw[map.code])      : '',
       project:   map.project   ? extractUrl(raw[map.project])   : '',
@@ -87,7 +102,7 @@
 
   function buildMap(keys) {
     var map = {};
-    ['title', 'authors', 'venue', 'pdf', 'code', 'project', 'tags', 'thumbnail'].forEach(function (f) {
+    ['title', 'authors', 'venue', 'publishedAt', 'pdf', 'code', 'project', 'tags', 'thumbnail'].forEach(function (f) {
       map[f] = detectKey(keys, f);
     });
     return map;

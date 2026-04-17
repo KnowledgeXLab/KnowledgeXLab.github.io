@@ -2,7 +2,7 @@ name: Sync Papers from Feishu
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # every 10 minutes (TESTING — revert to daily later)
+    - cron: "0 18 * * *"     # daily at 18:00 UTC = 02:00 Beijing time
   workflow_dispatch:        # allow manual trigger
 
 jobs:
