@@ -17,7 +17,8 @@
     code:      ['Github仓库链接', 'github', 'code', '代码', 'repo', '仓库'],
     project:   ['刊印链接', 'project', '项目页', '主页', '刊印'],
     tags:      ['录用类型', '标签', '分类', 'tag', '类别', 'topic', 'keyword', '关键词'],
-    thumbnail: ['_thumbnail', 'thumbnail', '封面', '缩略图']
+    thumbnail: ['_thumbnail', 'thumbnail', '封面', '缩略图'],
+    bibtex:    ['bibtex', 'bib']
   };
 
   function detectKey(keys, fieldType) {
@@ -96,13 +97,14 @@
       code:      map.code      ? extractUrl(raw[map.code])      : '',
       project:   map.project   ? extractUrl(raw[map.project])   : '',
       tags:      tags,
-      thumbnail: map.thumbnail ? (raw[map.thumbnail] || '')     : ''
+      thumbnail: map.thumbnail ? (raw[map.thumbnail] || '')     : '',
+      bibtex:    map.bibtex    ? String(raw[map.bibtex] || '').trim() : ''
     };
   }
 
   function buildMap(keys) {
     var map = {};
-    ['title', 'authors', 'venue', 'publishedAt', 'pdf', 'code', 'project', 'tags', 'thumbnail'].forEach(function (f) {
+    ['title', 'authors', 'venue', 'publishedAt', 'pdf', 'code', 'project', 'tags', 'thumbnail', 'bibtex'].forEach(function (f) {
       map[f] = detectKey(keys, f);
     });
     return map;
@@ -185,10 +187,17 @@
 
         // Text content
         html += '<div class="pub-body">';
-        html += '<div class="pub-title">' + esc(p.title) + '</div>';
+        if (p.pdf) {
+          html += '<div class="pub-title"><a href="' + esc(p.pdf) + '" target="_blank" rel="noopener">' + esc(p.title) + '</a></div>';
+        } else {
+          html += '<div class="pub-title">' + esc(p.title) + '</div>';
+        }
         if (p.authors) html += '<div class="pub-authors">' + esc(p.authors) + '</div>';
         html += '<div class="pub-meta">';
         if (p.venue) html += '<span class="pub-venue">' + esc(p.venue) + '</span>';
+        p.tags.forEach(function (t) {
+          html += '<span class="pub-tag">' + esc(t) + '</span>';
+        });
         if (p.pdf) {
           html += '<span class="pub-separator">&middot;</span>';
           html += '<a href="' + esc(p.pdf) + '" class="pub-link" target="_blank" rel="noopener">PDF</a>';
@@ -201,11 +210,9 @@
           html += '<span class="pub-separator">&middot;</span>';
           html += '<a href="' + esc(p.project) + '" class="pub-link" target="_blank" rel="noopener">Paper</a>';
         }
-        if (tagsStr) {
+        if (p.bibtex) {
           html += '<span class="pub-separator">&middot;</span>';
-          p.tags.forEach(function (t) {
-            html += '<span class="pub-tag">' + esc(t) + '</span>';
-          });
+          html += '<button type="button" class="pub-link pub-link--copy" data-bibtex="' + esc(p.bibtex) + '">BibTeX</button>';
         }
         html += '</div>';  // pub-meta
         html += '</div>';  // pub-body
@@ -218,6 +225,7 @@
     if (list) list.innerHTML = html || '<p class="pub-loading">No publications found.</p>';
 
     attachFilters();
+    attachCopyButtons();
   }
 
   function renderStatic() {
@@ -248,6 +256,50 @@
     });
     document.querySelectorAll('.pub-year-group').forEach(function (g) {
       g.style.display = g.querySelectorAll('.pub-card:not(.hidden)').length ? '' : 'none';
+    });
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy') ? resolve() : reject();
+      } catch (e) {
+        reject(e);
+      } finally {
+        document.body.removeChild(ta);
+      }
+    });
+  }
+
+  function attachCopyButtons() {
+    document.querySelectorAll('.pub-link--copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (btn.classList.contains('is-copied')) return;
+        var text = btn.dataset.bibtex || '';
+        var original = btn.textContent;
+        copyText(text).then(function () {
+          btn.classList.add('is-copied');
+          btn.textContent = 'Copied!';
+        }).catch(function () {
+          btn.classList.add('is-copied');
+          btn.textContent = 'Copy failed';
+        }).finally(function () {
+          setTimeout(function () {
+            btn.classList.remove('is-copied');
+            btn.textContent = original;
+          }, 1500);
+        });
+      });
     });
   }
 

@@ -120,11 +120,16 @@ def fetch_first_figure(arxiv_id: str) -> str | None:
     """Download first figure from arXiv HTML and return its local relative path,
     or None if unavailable."""
     html_url = f"https://arxiv.org/html/{arxiv_id}"
-    try:
-        resp = requests.get(html_url, headers=HEADERS, timeout=20)
-        if resp.status_code != 200:
-            return None
-    except requests.RequestException:
+    resp = None
+    for attempt in range(3):
+        try:
+            resp = requests.get(html_url, headers=HEADERS, timeout=20)
+            if resp.status_code == 200:
+                break
+        except requests.RequestException:
+            resp = None
+        time.sleep(2 ** attempt)  # 1s, 2s, 4s
+    if resp is None or resp.status_code != 200:
         return None
 
     parser = FigureFinder()

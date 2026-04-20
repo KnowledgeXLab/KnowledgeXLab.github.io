@@ -1,19 +1,9 @@
 [
   {
-    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "San Zhang 1;\nSi Li 2;\n",
-    "录用类型": [
-      "Preprint"
-    ],
-    "是否为团队主导工作": true,
-    "期刊/会议": "ICLR-2026",
-    "论文标题": "标题示例",
-    "论文状态": "已投稿并挂arXiv"
-  },
-  {
     "Bibtex": "@inproceedings{yang2026towards,\n  title={Towards Self-Evolving Agents: Enabling Autonomy through Interactive Experience Refinement},\n  author={Yang, Cheng and Yang, Xuemeng and Wen, Licheng and Fu, Daocheng and Mei, Jianbiao and Wu, Rong and Cai, Pinlong and Shen, Yufan and Deng, Nianchen and Xu, Jia and Shi, Botian and Qiao, Yu and Li, Haifeng},\n  booktitle={Findings of the Association for Computational Linguistics: ACL 2026},\n  year={2026},\n  publisher={Association for Computational Linguistics},\n}",
     "Github仓库链接": {
-      "link": "https://openreview.net/pdf?id=nu2tOJgxPi",
-      "text": "https://openreview.net/pdf?id=nu2tOJgxPi"
+      "link": "https://github.com/KnowledgeXLab/MUSE",
+      "text": "https://github.com/KnowledgeXLab/MUSE"
     },
     "arXiv主页": {
       "link": "https://arxiv.org/abs/2510.08002",
@@ -21,8 +11,8 @@
     },
     "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Cheng Yang 1,2,*;\nXuemeng Yang 2,* ;\nLicheng Wen 2,4,6,*; \nDaocheng Fu 3,2;\nJianbiao Mei 5,2;\nRong Wu 5,2;\nPinlong Cai 2;\nYufan Shen 2;\nNianchen Deng 2; \nJia Xu 2;\nBotian Shi 2,^ ;\nYu Qiao 2;\nHaifeng Li 1,^",
     "刊印链接": {
-      "link": "https://openreview.net/pdf?id=nu2tOJgxPi",
-      "text": "https://openreview.net/pdf?id=nu2tOJgxPi"
+      "link": "https://openreview.net/forum?id=nu2tOJgxPi",
+      "text": "https://openreview.net/forum?id=nu2tOJgxPi"
     },
     "单位信息（每个单位一行，分号换行）": "1 Central South University;\n2 Shanghai Artificial Intelligence Laboratory; \n3 Fudan University;\n4 Shanghai Innovation Institute;\n5 Zhejiang University; \n6 Shanghai Jiao Tong University",
     "录用类型": [
