@@ -15,6 +15,7 @@
     var rafId = null;
 
     function lerp(a, b, t) { return a + (b - a) * t; }
+    function ease(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; } // ease-in-out quad
 
     function update() {
       rafId = null;
@@ -27,7 +28,7 @@
 
       var scrollY = window.scrollY || window.pageYOffset;
       var heroH   = section.offsetHeight;
-      var t = Math.max(0, Math.min(1, scrollY / (heroH * 0.10)));
+      var t = ease(Math.max(0, Math.min(1, scrollY / (heroH * 0.15))));
 
       // Measure actual DOM positions at current zoom level — stays correct at any scale
       var heroRect  = section.getBoundingClientRect();
