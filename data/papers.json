@@ -200,12 +200,17 @@
     "_thumbnail": "/assets/images/papers/2509.24709.png"
   },
   {
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2508.05502",
+      "text": "https://arxiv.org/abs/2508.05502"
+    },
     "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yufei Gao, Jiaying Fei, Nuo Chen, Ruirui Chen, Guohang Yan, Yunshi Lan, Botian Shi",
     "单位信息（每个单位一行，分号换行）": "1 Shanghai AI Laboratory\n2 East China Normal University\n3 The Chinese University of Hong Kong, Shenzhen\n4\nInstitute of High Performance Computing, A*STAR",
     "摘要": "Multimodal Large Language Models (MLLMs) perform strongly in high-resource languages, yet their effectiveness drops sharply in low-resource settings, largely due to the scarcity of aligned and culturally informative multimodal data. Existing multilingual enhancement approaches predominantly rely on text-only resources or translation-based pipelines, which improve surface-level fluency but often fail to capture culturally specific visual knowledge.\nIn this work, we present MELLA, a large-scale multimodal multilingual dataset designed to support both linguistic fluency and culturally grounded visual understanding in low-resource languages. MELLA is constructed using a dual-source data curation strategy that combines (i) native web image-alt-text pairs, which provide in-context, culture-specific visual-textual alignments, and (ii) high-quality image descriptions generated in a high-resource language and translated into target languages to ensure linguistic richness and structural completeness. Rather than expanding multilingual coverage alone, this design explicitly disentangles two complementary learning signals that are conflated in existing multilingual multimodal datasets.\nMELLA covers eight low-resource languages and contains 6.8M image-text pairs spanning diverse domains and visual categories. Through controlled diagnostic fine-tuning experiments on multiple MLLM backbones, we show that training on MELLA mitigates the cultural hallucination gap, often manifested as culturally “thin“ descriptions, by enabling models to recognize and articulate culturally specific entities that are systematically overlooked by translation-centric pipelines. Our findings underscore the central role of data alignment, rather than model modification, in achieving culturally grounded multimodal understanding for low-resource languages.",
     "是否为团队主导工作": true,
     "期刊/会议": "Under Submission",
     "记录创建日期": 1776268800000,
+    "论文发表日期": 1754496000000,
     "论文标题": "MELLA: Bridging Linguistic Capability and Cultural Groundedness for Low-Resource Language MLLMs",
     "责任人": [
       {
@@ -214,7 +219,8 @@
         "id": "ou_33cfcf2048b911c367917bf320f12862",
         "name": "闫国行"
       }
-    ]
+    ],
+    "_thumbnail": "/assets/images/papers/2508.05502.png"
   },
   {
     "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Hongwei Zhang, Zehui Ling, Ruicheng Zhu, Yue Zhang, ShaoxiongGuo, Jinrong Wen, Pinlong Cai, Botian Shi, Guohang Yan",
@@ -223,6 +229,7 @@
     "是否为团队主导工作": true,
     "期刊/会议": "Under Submission",
     "记录创建日期": 1776268800000,
+    "论文发表日期": 1776614400000,
     "论文标题": "PropRAG: Seeded Relevance Diffusion on Chunk–Page Graphs for Long Multimodal Document Retrieval",
     "责任人": [
       {
@@ -371,6 +378,7 @@
     ],
     "期刊/会议": "Under Submission",
     "记录创建日期": 1776355200000,
+    "论文发表日期": 1761580800000,
     "论文标题": "MGA: Memory-Driven GUI Agent for Observation-Centric Interaction",
     "论文状态": "已投稿并挂arXiv",
     "_thumbnail": "/assets/images/papers/2510.24168.png"
