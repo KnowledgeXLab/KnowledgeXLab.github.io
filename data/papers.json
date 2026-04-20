@@ -370,7 +370,20 @@
     "_thumbnail": "/assets/images/papers/2506.00783.png"
   },
   {
-    "记录创建日期": 1776355200000
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2510.24168",
+      "text": "https://arxiv.org/abs/2510.24168"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Weihua Cheng;\nJunming Liu;\nYifei Sun;\nBotian Shi;\nYirong Chen^;\nDing Wang^",
+    "单位信息（每个单位一行，分号换行）": "1.Shanghaitech University;\n2 Shanghai AI Laboratory",
+    "录用类型": [
+      "Preprint"
+    ],
+    "期刊/会议": "Under Submission",
+    "记录创建日期": 1776355200000,
+    "论文标题": "MGA: Memory-Driven GUI Agent for Observation-Centric Interaction",
+    "论文状态": "已投稿并挂arXiv",
+    "_thumbnail": "/assets/images/papers/2510.24168.png"
   },
   {
     "记录创建日期": 1776355200000
