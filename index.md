@@ -2,15 +2,15 @@
 layout: default
 title: Home
 research_directions:
-  - icon: "🔬"
-    title: "AGI for Science (AGI4S)"
-    description: "Frontier research in AGI for scientific discovery and knowledge synthesis across disciplines."
   - icon: "🤖"
-    title: "Continuous & Lifelong Learning"
-    description: "Autonomous learning agents that evolve continuously in open and non-stationary environments."
-  - icon: "👥"
-    title: "Human-AI Co-evolution"
-    description: "Next-generation HCI and human-in-the-loop approaches including Generative UI paradigms."
+    title: "Continual Learning & Autonomous Agent Evolution"
+    description: "Designing agents that accumulate knowledge over time, adapt to non-stationary environments, and self-improve across tasks — without catastrophic forgetting or human intervention."
+  - icon: "🧠"
+    title: "Knowledge Reasoning, Representation & Utilization"
+    description: "Building expressive knowledge representations and robust multi-step reasoning capabilities that connect structured knowledge graphs with unstructured information for real-world inference and decision-making."
+  - icon: "🔬"
+    title: "Foundation Models for Vertical Domains"
+    description: "Adapting large foundation models to specialized fields — driving breakthroughs in industrial manufacturing, materials science, and beyond through AI-powered knowledge synthesis and discovery."
 ---
 
 <!-- Hero -->
@@ -29,24 +29,8 @@ research_directions:
   </div>
 </section>
 
-<!-- Stats Bar -->
-<div class="stats-bar">
-  <div class="stat-item">
-    <div class="stat-number">{{ site.data.publications | size }}</div>
-    <div class="stat-label">Publications</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">{{ site.data.people | size }}</div>
-    <div class="stat-label">Members</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">{{ site.data.projects | size }}</div>
-    <div class="stat-label">Projects</div>
-  </div>
-</div>
-
 <!-- Research Directions -->
-<div class="section-label">Research Directions</div>
+<div class="section-label" style="margin-top: 48px;">Research Directions</div>
 <div class="research-grid">
   {% for dir in page.research_directions %}
   <div class="research-card">

@@ -1,26 +1,17 @@
-- name: "Project Alpha"
-  description: "Lifelong knowledge graph completion with autonomous learning agents that continuously update and refine structured knowledge."
+- name: "HetaRAG"
+  description: "A hybrid deep retrieval-augmented generation framework that integrates vector indices, knowledge graphs, full-text search, and relational databases — enabling sophisticated multi-hop question answering and automated research report generation."
   status: "active"
-  tags: ["Knowledge Graph", "Lifelong Learning"]
-  cover_emoji: "🔬"
+  tags: ["RAG", "Knowledge Graph", "LLM"]
+  cover_emoji: "🧠"
   cover_image: ""
-  url: "https://github.com/KnowledgeXLab"
-  papers: ["Towards Continuous Knowledge Graph Completion with Lifelong Learning"]
+  url: "https://github.com/KnowledgeXLab/HetaRAG"
+  papers: []
 
-- name: "Project Beta"
-  description: "Generative UI framework for human-agent co-evolution and next-generation HCI paradigms."
+- name: "skill-git"
+  description: "A Claude Code plugin bringing version control to AI agent skills — track changes, roll back bad edits, and merge overlapping local skills into stronger unified tools."
   status: "active"
-  tags: ["HCI", "Generative UI"]
-  cover_emoji: "🤖"
+  tags: ["AI Agent", "Claude Code", "Developer Tools"]
+  cover_emoji: "🔧"
   cover_image: ""
-  url: ""
-  papers: ["Generative UI: Rethinking Human-Agent Interaction Paradigms"]
-
-- name: "Project Gamma"
-  description: "Benchmark suite for evaluating AGI systems on scientific knowledge discovery tasks."
-  status: "completed"
-  tags: ["AGI", "Benchmark"]
-  cover_emoji: "📊"
-  cover_image: ""
-  url: ""
-  papers: ["AGI for Scientific Knowledge Synthesis: A Survey"]
+  url: "https://github.com/KnowledgeXLab/skill-git"
+  papers: []
