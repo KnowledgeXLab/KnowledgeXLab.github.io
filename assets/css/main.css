@@ -541,6 +541,53 @@ img { max-width: 100%; height: auto; display: block; }
 .icon-link:hover { color: var(--accent); background: var(--accent-light); }
 .icon-link .ai { font-size: 1.05rem; }
 
+/* ── FEATURED PAPERS (homepage) ── */
+.featured-papers { display: flex; flex-direction: column; gap: 12px; }
+.featured-paper {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  transition: box-shadow 0.2s;
+}
+.featured-paper:hover { box-shadow: var(--shadow-sm); }
+.featured-paper-meta { margin-bottom: 4px; }
+.featured-paper-venue {
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent-text);
+  background: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-full);
+  padding: 2px 8px;
+}
+.featured-paper-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem; font-weight: 600;
+  line-height: 1.4; margin-bottom: 4px;
+}
+.featured-paper-title a { color: var(--text-primary); }
+.featured-paper-title a:hover { color: var(--accent); }
+.featured-paper-authors {
+  font-size: 0.8rem; color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+.featured-paper-links { display: flex; gap: 12px; }
+.paper-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.75rem; font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.paper-link:hover { color: var(--accent); }
+.view-all-link {
+  font-size: 0.8125rem; font-weight: 500;
+  color: var(--accent-text);
+}
+.view-all-link:hover { text-decoration: underline; }
+
 /* ── PUBLICATIONS PAGE ── */
 .filter-bar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
 .filter-btn {

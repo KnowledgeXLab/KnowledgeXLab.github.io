@@ -3,7 +3,7 @@ layout: default
 title: Home
 research_directions:
   - icon: "🤖"
-    title: "Continual Learning & Autonomous Agent Evolution"
+    title: Continuous Learning & Autonomous Agent Evolution"
     description: "Designing agents that accumulate knowledge over time, adapt to non-stationary environments, and self-improve across tasks — without catastrophic forgetting or human intervention."
   - icon: "🧠"
     title: "Knowledge Reasoning, Representation & Utilization"
@@ -53,3 +53,13 @@ research_directions:
   </div>
   {% endfor %}
 </div>
+
+<hr class="divider">
+
+<!-- Featured Papers -->
+<div class="section-label">Featured Papers</div>
+<div id="featured-papers-list"><p style="color:var(--text-muted);font-size:0.875rem;">Loading…</p></div>
+<script>
+window.FEATURED_IDS = [{% for id in site.data.featured_papers %}"{{ id }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+</script>
+<script src="{{ '/assets/js/featured-papers.js' | relative_url }}"></script>

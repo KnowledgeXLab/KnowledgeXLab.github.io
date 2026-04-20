@@ -37,7 +37,7 @@ description: Get in touch with KnowledgeXLab — collaborations, student applica
   <h3>🎓 Open Positions</h3>
   <p>
     We are looking for self-motivated PhD students and research interns with interests in
-    continual learning, knowledge reasoning, or foundation models for vertical domains.
+    continuous learning, knowledge reasoning, or foundation models for vertical domains.
     Send your CV and a brief research statement to our email.
   </p>
   <a href="mailto:{{ site.lab_email }}" class="btn btn-primary">Send Application →</a>
