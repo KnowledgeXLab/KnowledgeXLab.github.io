@@ -5,6 +5,9 @@ on:
     - cron: "0 18 * * *"     # daily at 18:00 UTC = 02:00 Beijing time
   workflow_dispatch:        # allow manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
