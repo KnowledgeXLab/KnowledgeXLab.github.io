@@ -94,6 +94,7 @@
     "记录创建日期": 1776182400000,
     "论文发表日期": 1759161600000,
     "论文标题": "RE-Searcher: Robust Agentic Search with Goal-oriented Planning and Self-reflection",
+    "论文状态": "已挂arXiv",
     "责任人": [
       {
         "email": "fudaocheng@pjlab.org.cn",
@@ -125,6 +126,7 @@
     "记录创建日期": 1776268800000,
     "论文发表日期": 1747843200000,
     "论文标题": "O2-Searcher: A Searching-based Agent Model for Open-Domain Open-Ended Question Answering",
+    "论文状态": "已投稿并挂arXiv",
     "责任人": [
       {
         "email": "meijianbiao@pjlab.org.cn",
@@ -384,9 +386,84 @@
     "_thumbnail": "/assets/images/papers/2510.24168.png"
   },
   {
-    "记录创建日期": 1776355200000
+    "arXiv主页": {
+      "link": "https://arxiv.org/pdf/2507.20766",
+      "text": "https://arxiv.org/pdf/2507.20766"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yang Chen, Yufan Shen, Wenxuan Huang, Sheng Zhou, Qunshu Lin, Xinyu Cai, Zhi Yu, Jiajun Bu, Botian Shi, Yu Qiao",
+    "单位信息（每个单位一行，分号换行）": "1 Zhejiang University，2 Shanghai Artificial Intelligence Laboratory，3 East China Normal University， 4 Shanghai Innovation Institute， 5 Abaka AI",
+    "期刊/会议": "Under Submission",
+    "记录创建日期": 1776355200000,
+    "论文标题": "Learning only with images: Visual reinforcement learning with reasoning, rendering, and visual feedback",
+    "论文状态": "已投稿并挂arXiv",
+    "_thumbnail": "/assets/images/papers/2507.20766.png"
   },
   {
-    "记录创建日期": 1776355200000
+    "Bibtex": "@inproceedings{zhang2026leanrag,\n  title={Leanrag: Knowledge-graph-based generation with semantic aggregation and hierarchical retrieval},\n  author={Zhang, Yaoze and Wu, Rong and Cai, Pinlong and Wang, Xiaoman and Yan, Guohang and Mao, Song and Wang, Ding and Shi, Botian},\n  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\n  volume={40},\n  number={41},\n  pages={34862--34869},\n  year={2026}\n}\n\n\n\n\n\n",
+    "Github仓库链接": {
+      "link": "https://github.com/KnowledgeXLab/LeanRAG",
+      "text": "https://github.com/KnowledgeXLab/LeanRAG"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2508.10391",
+      "text": "https://arxiv.org/abs/2508.10391"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yaoze Zhang 1,2*;\nRong Wu 1,3*;\nPinlong Cai 1^;\nXiaoman Wang 4;\nGuohang Yan 1;\nSong Mao 1;\nDing Wang 1;\nBotian Shi 1",
+    "刊印链接": {
+      "link": "https://ojs.aaai.org/index.php/AAAI/article/download/40789/44750",
+      "text": "https://ojs.aaai.org/index.php/AAAI/article/download/40789/44750"
+    },
+    "单位信息（每个单位一行，分号换行）": "1 Shanghai Artificial Intelligence Laboratory;\n2 University of Shanghai for Science and Technology;\n3 Zhejiang University;\n4 East China Normal University",
+    "录用类型": [
+      "Poster"
+    ],
+    "摘要": "Retrieval-Augmented Generation (RAG) plays a crucial role in grounding Large Language Models by leveraging external knowledge, whereas the effectiveness is often compromised by the retrieval of contextually flawed or incomplete information. To address this, knowledge graph-based RAG methods have evolved towards hierarchical structures, organizing knowledge into multi-level summaries. However, these approaches still suffer from two critical, unaddressed challenges: high-level conceptual summaries exist as disconnected``semantic islands'', lacking the explicit relations needed for cross-community reasoning; and the retrieval process itself remains structurally unaware, often degenerating into an inefficient flat search that fails to exploit the graph's rich topology. To overcome these limitations, we introduce LeanRAG, a framework that features a deeply collaborative design combining knowledge aggregation and retrieval strategies. LeanRAG first employs a novel semantic aggregation algorithm that forms entity clusters and constructs new explicit relations among aggregation-level summaries, creating a fully navigable semantic network. Then, a bottom-up, structure-guided retrieval strategy anchors queries to the most relevant fine-grained entities and then systematically traverses the graph's semantic pathways to gather concise yet contextually comprehensive evidence sets. The LeanRAG can mitigate the substantial overhead associated with path retrieval on graphs and minimize redundant information retrieval. Extensive experiments on four challenging QA benchmarks with different domains demonstrate that LeanRAG significantly outperforms existing methods in response quality while reducing 46% retrieval redundancy.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "AAAI 2026",
+    "记录创建日期": 1776355200000,
+    "论文pdf": [
+      {
+        "file_token": "OwCTbmt58olMp2xHV4fcLM4Kn0c",
+        "name": "40789-Article Text-44880-1-2-20260314.pdf",
+        "size": 840145,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=OwCTbmt58olMp2xHV4fcLM4Kn0c",
+        "type": "application/pdf",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/OwCTbmt58olMp2xHV4fcLM4Kn0c/download"
+      }
+    ],
+    "论文发表日期": 1768838400000,
+    "论文标题": "Leanrag: Knowledge-graph-based generation with semantic aggregation and hierarchical retrieval",
+    "论文状态": "已录用",
+    "责任人": [
+      {
+        "email": "wurong@pjlab.org.cn",
+        "en_name": "吴荣",
+        "id": "ou_e2c69b87d4cb138c76221ca2f8d5326f",
+        "name": "吴荣"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2508.10391.png"
+  },
+  {
+    "arXiv主页": {
+      "link": "https://arxiv.org/pdf/2604.01670",
+      "text": "https://arxiv.org/pdf/2604.01670"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Junming Liu, Yifei Sun, Weihua Cheng, Haodong Lei, Yuqi Li, Yirong Chen, Ding Wang",
+    "单位信息（每个单位一行，分号换行）": "1 Shanghai AI Laboratory\n2 The City University of New York",
+    "录用类型": [
+      "Preprint"
+    ],
+    "期刊/会议": "Under Submission",
+    "记录创建日期": 1776700800000,
+    "论文标题": "Hierarchical Memory Orchestration for Personalized Persistent Agents",
+    "论文状态": "已投稿并挂arXiv",
+    "_thumbnail": "/assets/images/papers/2604.01670.png"
+  },
+  {
+    "记录创建日期": 1776700800000
+  },
+  {
+    "记录创建日期": 1776700800000
   }
 ]
