@@ -1,10 +1,10 @@
-- name: "HetaRAG"
-  description: "A hybrid deep retrieval-augmented generation framework that integrates vector indices, knowledge graphs, full-text search, and relational databases — enabling sophisticated multi-hop question answering and automated research report generation."
+- name: "Heta"
+  description: "Multimodal knowledge base for AI agents. Turn documents of any kind into queryable knowledge, give agents persistent memory, and generate structured insights — all in one platform."
   status: "active"
   tags: ["RAG", "Knowledge Graph", "LLM"]
   cover_emoji: "🧠"
   cover_image: ""
-  url: "https://github.com/KnowledgeXLab/HetaRAG"
+  url: "https://github.com/KnowledgeXLab/Heta"
   papers: []
 
 - name: "skill-git"
