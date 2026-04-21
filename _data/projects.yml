@@ -12,6 +12,6 @@
   status: "active"
   tags: ["AI Agent", "Claude Code", "Developer Tools"]
   cover_emoji: "🔧"
-  cover_image: ""
+  cover_image: "/assets/images/projects/skill-git-banner.png"
   url: "https://github.com/KnowledgeXLab/skill-git"
   papers: []
