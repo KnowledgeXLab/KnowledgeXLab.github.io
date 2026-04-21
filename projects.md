@@ -15,18 +15,25 @@ description: Ongoing and completed research projects at KnowledgeXLab.
 <div class="projects-grid" style="margin-bottom: 48px;">
   {% for project in active_projects %}
   <div class="project-card">
-    <div class="project-cover">
+    <div class="project-cover{% if project.cover_image and project.cover_image != "" %} has-image{% endif %}">
       {% if project.cover_image and project.cover_image != "" %}
-        <img src="{{ project.cover_image | relative_url }}" alt="{{ project.name }}" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
-      {% endif %}
-      <div class="project-cover-emoji">{{ project.cover_emoji | default: "🔬" }}</div>
-      <div class="project-cover-title">
         {% if project.url and project.url != "" %}
-          <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a>
+          <a href="{{ project.url }}" target="_blank" rel="noopener" class="project-cover-link">
+            <img src="{{ project.cover_image | relative_url }}" alt="{{ project.name }}">
+          </a>
         {% else %}
-          {{ project.name }}
+          <img src="{{ project.cover_image | relative_url }}" alt="{{ project.name }}">
         {% endif %}
-      </div>
+      {% else %}
+        <div class="project-cover-emoji">{{ project.cover_emoji | default: "🔬" }}</div>
+        <div class="project-cover-title">
+          {% if project.url and project.url != "" %}
+            <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a>
+          {% else %}
+            {{ project.name }}
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
     <div class="project-body">
       <p>{{ project.description }}</p>

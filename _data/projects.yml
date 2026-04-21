@@ -3,7 +3,7 @@
   status: "active"
   tags: ["RAG", "Knowledge Graph", "LLM"]
   cover_emoji: "🧠"
-  cover_image: ""
+  cover_image: "/assets/images/projects/heta-banner.png"
   url: "https://github.com/KnowledgeXLab/Heta"
   papers: []
 
