@@ -383,6 +383,14 @@
     "论文发表日期": 1761580800000,
     "论文标题": "MGA: Memory-Driven GUI Agent for Observation-Centric Interaction",
     "论文状态": "已投稿并挂arXiv",
+    "责任人": [
+      {
+        "email": "wangding@pjlab.org.cn",
+        "en_name": "王锭",
+        "id": "ou_03ab7a597be21b722a09d791e2eecba2",
+        "name": "王锭"
+      }
+    ],
     "_thumbnail": "/assets/images/papers/2510.24168.png"
   },
   {
@@ -396,6 +404,14 @@
     "记录创建日期": 1776355200000,
     "论文标题": "Learning only with images: Visual reinforcement learning with reasoning, rendering, and visual feedback",
     "论文状态": "已投稿并挂arXiv",
+    "责任人": [
+      {
+        "email": "chenyang3@pjlab.org.cn",
+        "en_name": "陈杨",
+        "id": "ou_dbf786559c799b862b7591861f546e1d",
+        "name": "陈杨"
+      }
+    ],
     "_thumbnail": "/assets/images/papers/2507.20766.png"
   },
   {
