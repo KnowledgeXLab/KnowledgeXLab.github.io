@@ -301,11 +301,11 @@
     "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Rong Wu 1,2∗;\nXiaoman Wang 3∗;\nJianbiao Mei 1,2;\nPinlong Cai 2;\nDaocheng Fu 2,4; \nCheng Yang 2,5;\nLicheng Wen 2,7,8; \nXuemeng Yang 2; \nYufan Shen 2;\nYuxin Wang 9;\nBotian Shi 2 ^",
     "单位信息（每个单位一行，分号换行）": "1 Zhejiang University; \n2 Shanghai Artificial Intelligence Laboratory;\n3 East China Normal University;\n4 Fudan University;\n5 Central South University;\n7 Shanghai Innovation Institute;\n8 Shanghai Jiao Tong University;\n9 University of Science and Technology of China",
     "录用类型": [
-      "Preprint"
+      "Poster"
     ],
     "摘要": "Current Large Language Model (LLM) agents show strong performance in tool use, but lack the crucial capability to systematically learn from their own experiences. While existing frameworks mainly focus on mitigating external knowledge gaps, they fail to address a more fundamental limitation: the inability to iteratively refine problem-solving strategies. In this work, we introduce \\textbf{EvolveR}, a framework designed to enable agent to self-improve through a complete, closed-loop experience lifecycle. This lifecycle comprises two key stages: (1) \\textbf{Offline Self-Distillation}, where the agent's interaction trajectories are synthesized into a structured repository of abstract, reusable strategic principles; (2) \\textbf{Online Interaction}, where the agent interacts with tasks and actively retrieves distilled principles to guide its decision-making, accumulating a diverse set of behavioral trajectories. This loop employs a policy reinforcement mechanism to iteratively update the agent based on its performance. We demonstrate the effectiveness of EvolveR on complex multi-hop question-answering benchmarks, where it achieves superior performance over strong agentic baselines. Our work presents a comprehensive blueprint for agents that learn not only from external data but also from the consequences of their own actions, paving the way for more autonomous and continuously improving systems. Code is available at \\textcolor{magenta}{\\url{https://github.com/Edaizi/EvolveR}}.",
     "是否为团队主导工作": true,
-    "期刊/会议": "Under Submission",
+    "期刊/会议": "ICML 2026",
     "记录创建日期": 1776355200000,
     "论文pdf": [
       {
@@ -319,7 +319,7 @@
     ],
     "论文发表日期": 1760630400000,
     "论文标题": "EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle",
-    "论文状态": "已投稿并挂arXiv",
+    "论文状态": "已录用",
     "责任人": [
       {
         "email": "wurong@pjlab.org.cn",
