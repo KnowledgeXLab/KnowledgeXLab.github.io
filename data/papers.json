@@ -481,9 +481,69 @@
     "_thumbnail": "/assets/images/papers/2604.01670.png"
   },
   {
-    "记录创建日期": 1776700800000
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2507.03262",
+      "text": "https://arxiv.org/abs/2507.03262"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yizhou Wang*,†, Song Mao*, Yang Chen*,†, Yufan Shen, Yinqiao Yan, Pinlong Cai, Ding Wang, Guohang Yan, Zhi Yu, Xuming Hu, Botian Shi",
+    "刊印链接": {
+      "link": "https://openreview.net/forum?id=cAopJVLKvi",
+      "text": "https://openreview.net/forum?id=cAopJVLKvi"
+    },
+    "单位信息（每个单位一行，分号换行）": "1. Shanghai AI Lab\n2. HKUST(GZ)\n3. Zhejiang University\n4. Beijing University of Technology",
+    "录用类型": [
+      "Poster"
+    ],
+    "期刊/会议": "ICLR-2026",
+    "记录创建日期": 1776700800000,
+    "论文pdf": [
+      {
+        "file_token": "SW16b7CTsozzyjxYk8JcwUOvnze",
+        "name": "Encoder_Redundancy_ICLR2026_camera_ready.pdf",
+        "size": 1416170,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=SW16b7CTsozzyjxYk8JcwUOvnze",
+        "type": "application/pdf",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/SW16b7CTsozzyjxYk8JcwUOvnze/download"
+      }
+    ],
+    "论文标题": "Investigating Redundancy in Multimodal Large Language Models with Multiple Vision Encoders\n",
+    "论文状态": "已录用"
   },
   {
-    "记录创建日期": 1776700800000
+    "Bibtex": "@article{yang2026spiral,\n  title   = {SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents},\n  author  = {Yang, Yu and Liao, Yue and Mei, Jianbiao and Wang, Baisen and Yang, Xuemeng and Wen, Licheng and Zhang, Jiangning and Li, Xiangtai and Lv, Liang and Chen, Hanlin and Shi, Botian and Liu, Yong and Yan, Shuicheng and Lee, Gim Hee},\n  journal = {arXiv preprint arXiv:2603.08403},\n  year    = {2026}\n}",
+    "Github仓库链接": {
+      "link": "https://yuyang-cloud.github.io/spiral",
+      "text": "https://yuyang-cloud.github.io/spiral"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/pdf/2603.08403",
+      "text": "https://arxiv.org/pdf/2603.08403"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yu Yang*, Yue Liao*, Jianbiao Mei*, Baisen Wang*, Xuemeng Yang, Licheng Wen, Jiangning Zhang, Xiangtai Li, Liang Lv, Hanlin Chen, Botian Shi, Yong Liu†, Shuicheng Yan, Gim Hee Lee",
+    "单位信息（每个单位一行，分号换行）": "1. Zhejiang University\n2. Shanghai AI Laboratory\n3. National University of Singapore\n4. Chinese Academy of Sciences\n5. Tencent Youtu Lab\n6. Nanyang Technological University\n7. Wuhan University",
+    "摘要": "Long-horizon action-conditioned video generation aims to synthesize temporally coherent videos that follow complex action instructions over extended horizons, requiring procedural ordering, persistent action execution, and scene consistency beyond conventional TI2V's short-term fidelity. Existing single-shot video generation models typically operate in an open-loop manner, leading to incomplete action execution, hallucinated motions, and temporal drift. To address this, we propose SPIRAL, a closed-loop framework that performs sequential planning and iterative reflection for action-conditioned long-horizon video generation. Specifically, SPIRAL instantiates a think-act-reflect process: a PlanAgent decomposes high-level goals into sub-actions, which condition a VideoGenerator to synthesize each segment alongside a memory context, while a CriticAgent evaluates intermediate video segments to provide corrective feedback for iterative refinement. This closed-loop design further supports self-evolution by utilizing PlanAgent-proposed actions and CriticAgent-derived rewards for GRPO-based post-training to enhance the video generator's long-horizon consistency. Moreover, we introduce ActVideoGen-Dataset for task-specific training, and establish ActVideoGen-Bench as a dedicated evaluation suite for measuring action quality and temporal coherence. Experiments across multiple TI2V backbones alongside the self-evolving strategy show consistent gains on ActVideoGen-Bench and VBench, demonstrating the effectiveness of SPIRAL.",
+    "期刊/会议": "Under Submission",
+    "记录创建日期": 1779379200000,
+    "论文pdf": [
+      {
+        "file_token": "Z2CDbEmx2oIACUxOew8cw8zUnoh",
+        "name": "2603.08403v3.pdf",
+        "size": 14618830,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=Z2CDbEmx2oIACUxOew8cw8zUnoh",
+        "type": "application/pdf",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/Z2CDbEmx2oIACUxOew8cw8zUnoh/download"
+      }
+    ],
+    "论文标题": "SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents",
+    "论文状态": "已投稿并挂arXiv",
+    "责任人": [
+      {
+        "email": "yangyu1@pjlab.org.cn",
+        "en_name": "杨煜",
+        "id": "ou_b3984e2ddd4f99a0a77ac8b59fec5f23",
+        "name": "杨煜"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2603.08403.png"
   }
 ]
