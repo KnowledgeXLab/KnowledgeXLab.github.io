@@ -305,6 +305,7 @@
     ],
     "摘要": "Current Large Language Model (LLM) agents show strong performance in tool use, but lack the crucial capability to systematically learn from their own experiences. While existing frameworks mainly focus on mitigating external knowledge gaps, they fail to address a more fundamental limitation: the inability to iteratively refine problem-solving strategies. In this work, we introduce \\textbf{EvolveR}, a framework designed to enable agent to self-improve through a complete, closed-loop experience lifecycle. This lifecycle comprises two key stages: (1) \\textbf{Offline Self-Distillation}, where the agent's interaction trajectories are synthesized into a structured repository of abstract, reusable strategic principles; (2) \\textbf{Online Interaction}, where the agent interacts with tasks and actively retrieves distilled principles to guide its decision-making, accumulating a diverse set of behavioral trajectories. This loop employs a policy reinforcement mechanism to iteratively update the agent based on its performance. We demonstrate the effectiveness of EvolveR on complex multi-hop question-answering benchmarks, where it achieves superior performance over strong agentic baselines. Our work presents a comprehensive blueprint for agents that learn not only from external data but also from the consequences of their own actions, paving the way for more autonomous and continuously improving systems. Code is available at \\textcolor{magenta}{\\url{https://github.com/Edaizi/EvolveR}}.",
     "是否为团队主导工作": true,
+    "是否已宣发": "已宣发",
     "期刊/会议": "ICML 2026",
     "记录创建日期": 1776355200000,
     "论文pdf": [
@@ -481,6 +482,11 @@
     "_thumbnail": "/assets/images/papers/2604.01670.png"
   },
   {
+    "Bibtex": "@inproceedings{\n  wang2026investigating,\n  title={Investigating Redundancy in Multimodal Large Language Models with Multiple Vision Encoders},\n  author={Yizhou Wang and Song Mao and Yang Chen and Yufan Shen and Pinlong Cai and Ding Wang and Guohang Yan and Zhi Yu and Yinqiao Yan and Xuming Hu and Botian Shi},\n  booktitle={The Fourteenth International Conference on Learning Representations},\n  year={2026},\n  url={https://openreview.net/forum?id=cAopJVLKvi}\n}",
+    "Github仓库链接": {
+      "link": "https://maosong.website/Encoder-Redundancy/",
+      "text": "https://maosong.website/Encoder-Redundancy/"
+    },
     "arXiv主页": {
       "link": "https://arxiv.org/abs/2507.03262",
       "text": "https://arxiv.org/abs/2507.03262"
@@ -494,6 +500,9 @@
     "录用类型": [
       "Poster"
     ],
+    "摘要": "Recent multimodal large language models (MLLMs) increasingly integrate multiple vision encoders to improve performance on various benchmarks, assuming that diverse pretraining objectives yield complementary visual signals. However, we show this assumption often fails in practice. Through systematic encoder masking across representative multi-encoder MLLMs, we find that performance typically degrades gracefully—and sometimes even improves—when selected encoders are masked, revealing pervasive encoder redundancy. To quantify this effect, we introduce two principled metrics: the Conditional Utilization Rate (CUR), which measures an encoder’s marginal contribution in the presence of others, and the Information Gap (IG), which captures heterogeneity in encoder utility within a model. Using these tools, we observe: (i) strong specialization on tasks like OCR & Chart, where a single encoder can dominate with a CUR >90%, (ii) high redundancy on general VQA and knowledge-based tasks, where encoders are largely interchangeable, (iii) instances of detrimental encoders with negative CUR. Notably, masking specific encoders can yield up to 16% higher accuracy on a specific task category and 3.6% overall performance boost compared to the full model. Furthermore, single- and dual- encoder variants recover over 90% of baseline on most non-OCR tasks. Our analysis challenges the “more encoders are better” heuristic in MLLMs and provides actionable diagnostics for developing more efficient and effective multimodal architectures.\n",
+    "是否为团队主导工作": true,
+    "是否已宣发": "已宣发",
     "期刊/会议": "ICLR-2026",
     "记录创建日期": 1776700800000,
     "论文pdf": [
@@ -506,8 +515,17 @@
         "url": "https://open.feishu.cn/open-apis/drive/v1/medias/SW16b7CTsozzyjxYk8JcwUOvnze/download"
       }
     ],
+    "论文发表日期": 1769356800000,
     "论文标题": "Investigating Redundancy in Multimodal Large Language Models with Multiple Vision Encoders\n",
-    "论文状态": "已录用"
+    "论文状态": "已录用",
+    "责任人": [
+      {
+        "email": "maosong@pjlab.org.cn",
+        "en_name": "毛松",
+        "id": "ou_80e5c8509a8f5d3a8ff9e786499f32f2",
+        "name": "毛松"
+      }
+    ]
   },
   {
     "Bibtex": "@article{yang2026spiral,\n  title   = {SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents},\n  author  = {Yang, Yu and Liao, Yue and Mei, Jianbiao and Wang, Baisen and Yang, Xuemeng and Wen, Licheng and Zhang, Jiangning and Li, Xiangtai and Lv, Liang and Chen, Hanlin and Shi, Botian and Liu, Yong and Yan, Shuicheng and Lee, Gim Hee},\n  journal = {arXiv preprint arXiv:2603.08403},\n  year    = {2026}\n}",
