@@ -3,7 +3,7 @@ layout: default
 title: Home
 research_directions:
   - icon: "🤖"
-    title: Continuous Learning & Autonomous Agent Evolution"
+    title: Continuous Learning & Autonomous Agent Evolution
     description: "Designing agents that accumulate knowledge over time, adapt to non-stationary environments, and self-improve across tasks — without catastrophic forgetting or human intervention."
   - icon: "🧠"
     title: "Knowledge Reasoning, Representation & Utilization"
