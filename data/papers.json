@@ -229,14 +229,23 @@
     "_thumbnail": "/assets/images/papers/2508.05502.png"
   },
   {
-    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Hongwei Zhang, Zehui Ling, Ruicheng Zhu, Yue Zhang, ShaoxiongGuo, Jinrong Wen, Pinlong Cai, Botian Shi, Guohang Yan",
-    "单位信息（每个单位一行，分号换行）": "1 Shanghai AI Laboratory\n2 East China Normal University",
-    "摘要": "Retrieval-Augmented Generation (RAG) over visually rich long documents is limited by an independent matching paradigm, where visual retrievers score each page in isolation based on query–page similarity. This approach systematically misses evidence-containing pages whose decisive signals are local or only revealed through document associations, leaving the downstream Large Vision-Language Model (LVLM) with incomplete context. To address this, we propose PropRAG, a training-free retrieval framework that recovers such pages via seeded relevance diffusion. PropRAG represents a document as a multimodal chunk–page heterogeneous graph encoded with hierarchical, sequential, and similarity links. Given a query, PropRAG synergizes dense visual page priors with sparse high-confidence chunk seeds and executes a single Personalized PageRank pass to propagate relevance and re-rank pages. Experiments on MMLongBench and LongDocURL demonstrate consistent gains in retrieval metrics and downstream QA accuracy over direct visual retrieval and complex agentic frameworks, with negligible impact on total response time.",
+    "Bibtex": "@misc{zhang2026evipropseededrelevancediffusion,\n      title={EviProp: Seeded Relevance Diffusion on Chunk-Page Graphs for Long Multimodal Document Retrieval}, \n      author={Hongwei Zhang and Xiaoman Wang and Zehui Ling and Ruicheng Zhu and Yue Zhang and Pinlong Cai and Fuke Shen and Botian Shi and Tongquan Wei and Guohang Yan},\n      year={2026},\n      eprint={2606.08979},\n      archivePrefix={arXiv},\n      primaryClass={cs.IR},\n      url={https://arxiv.org/abs/2606.08979}, \n}",
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2606.08979",
+      "text": "https://arxiv.org/abs/2606.08979"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Hongwei Zhang, Xiaoman Wang, Zehui Ling, Ruicheng Zhu, Yue Zhang, Pinlong Cai, Fuke Shen, Botian Shi, Tongquan Wei, Guohang Yan",
+    "单位信息（每个单位一行，分号换行）": "1 East China Normal University\n2 Shanghai AI Laboratory",
+    "录用类型": [
+      "Preprint"
+    ],
+    "摘要": "Retrieving evidence pages from visually rich long documents is a key challenge in document question answering. Existing page-level visual retrievers operate under an independent matching paradigm: each page is scored in isolation based on query-page similarity. This paradigm can under-rank evidence pages whose signals are localized in fine-grained chunks or depend on document-internal associations. We propose EviProp, a retrieval method that recovers such pages via seeded relevance diffusion. EviProp models each document as a multimodal Chunk-Page graph with hierarchical, sequential, and similarity links. Given a query, it combines dense visual page priors with sparse chunk seeds, then runs Personalized PageRank to diffuse relevance over the graph. Experiments on MMLongBench-Doc and LongDocURL show consistent gains in evidence-page retrieval over independent visual retrieval and text-visual fusion baselines. Downstream QA results further show that improved retrieval translates into better answer accuracy, with negligible online retrieval overhead.",
     "是否为团队主导工作": true,
     "期刊/会议": "Under Submission",
-    "记录创建日期": 1776268800000,
-    "论文发表日期": 1776614400000,
-    "论文标题": "PropRAG: Seeded Relevance Diffusion on Chunk–Page Graphs for Long Multimodal Document Retrieval",
+    "记录创建日期": 1781193600000,
+    "论文发表日期": 1780848000000,
+    "论文标题": "EviProp: Seeded Relevance Diffusion on Chunk-Page Graphs for Long Multimodal Document Retrieval",
+    "论文状态": "已投稿并挂arXiv",
     "责任人": [
       {
         "email": "yanguohang@pjlab.org.cn",
@@ -244,7 +253,8 @@
         "id": "ou_33cfcf2048b911c367917bf320f12862",
         "name": "闫国行"
       }
-    ]
+    ],
+    "_thumbnail": "/assets/images/papers/2606.08979.png"
   },
   {
     "Bibtex": "@misc{lei2026memcottesttimescalingmemorydriven,\n      title={MemCoT: Test-Time Scaling through Memory-Driven Chain-of-Thought}, \n      author={Haodong Lei and Junming Liu and Yirong Chen and Ding Wang and Hongsong Wang},\n      year={2026},\n      eprint={2604.08216},\n      archivePrefix={arXiv},\n      primaryClass={cs.MA},\n      url={https://arxiv.org/abs/2604.08216}, \n}",
@@ -440,6 +450,7 @@
     ],
     "摘要": "Retrieval-Augmented Generation (RAG) plays a crucial role in grounding Large Language Models by leveraging external knowledge, whereas the effectiveness is often compromised by the retrieval of contextually flawed or incomplete information. To address this, knowledge graph-based RAG methods have evolved towards hierarchical structures, organizing knowledge into multi-level summaries. However, these approaches still suffer from two critical, unaddressed challenges: high-level conceptual summaries exist as disconnected``semantic islands'', lacking the explicit relations needed for cross-community reasoning; and the retrieval process itself remains structurally unaware, often degenerating into an inefficient flat search that fails to exploit the graph's rich topology. To overcome these limitations, we introduce LeanRAG, a framework that features a deeply collaborative design combining knowledge aggregation and retrieval strategies. LeanRAG first employs a novel semantic aggregation algorithm that forms entity clusters and constructs new explicit relations among aggregation-level summaries, creating a fully navigable semantic network. Then, a bottom-up, structure-guided retrieval strategy anchors queries to the most relevant fine-grained entities and then systematically traverses the graph's semantic pathways to gather concise yet contextually comprehensive evidence sets. The LeanRAG can mitigate the substantial overhead associated with path retrieval on graphs and minimize redundant information retrieval. Extensive experiments on four challenging QA benchmarks with different domains demonstrate that LeanRAG significantly outperforms existing methods in response quality while reducing 46% retrieval redundancy.",
     "是否为团队主导工作": true,
+    "是否已宣发": "已宣发",
     "期刊/会议": "AAAI 2026",
     "记录创建日期": 1776355200000,
     "论文pdf": [
@@ -563,5 +574,33 @@
       }
     ],
     "_thumbnail": "/assets/images/papers/2603.08403.png"
+  },
+  {
+    "Bibtex": "@article{wang2026ia,\n  title={{IA-RAG}: Interval-Algebra-Driven Temporal Reasoning for Dynamic Knowledge Retrieval},\n  author={Wang, Xiaoman and Zhang, Yaoze and Fan, Wenzhuo and Zhang, Hongwei and Wang, Ding and Yan, Guohang and Mao, Song and Shi, Botian and Lan, Yunshi and Cai, Pinlong},\n  journal={arXiv preprint arXiv:2606.06044},\n  year={2026}\n}",
+    "arXiv主页": {
+      "link": "https://arxiv.org/pdf/2606.06044",
+      "text": "https://arxiv.org/pdf/2606.06044"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Xiaoman Wang*, Yaoze Zhang*, Wenzhuo Fan, Hongwei Zhang, Ding Wang, Guohang Yan, Song Mao, Botian Shi, Yunshi Lan#, Pinlong Cai#",
+    "单位信息（每个单位一行，分号换行）": "1. East China Normal University\n2. Shanghai Artificial Intelligence Laboratory\n3. University of Shanghai for Science and Technology\n4. Harbin Engineering University",
+    "录用类型": [
+      "Preprint"
+    ],
+    "摘要": "Retrieval-Augmented Generation (RAG) has shown strong effectiveness in grounding Large Language Models (LLMs) with external knowledge. However, existing RAG and Graph RAG frameworks largely treat knowledge as static or associate time with coarse-grained timestamps or metadata, failing to capture rich temporal structures such as duration, overlap, and containment. We propose IA-RAG, a hierarchical temporal RAG framework that models knowledge as time intervals and performs retrieval under formal temporal constraints. IA-RAG represents facts as Interval Event Units (IEUs) and organizes them into a hierarchical Thematic Forest, where temporal dependencies are governed by Allen's Interval Algebra. To handle incomplete or uncertain temporal boundaries, IA-RAG further introduces a Sub-graph Time Tightening mechanism that refines fuzzy intervals through logical constraints within connected event subgraphs. In addition, IA-RAG supports implicit temporal semantic retrieval through interval-algebra-guided traversal. Experiments on multiple temporal question answering benchmarks, including TimeQA, TempReason, and ComplexTR, demonstrate that IA-RAG achieves strong temporal retrieval and reasoning performance, particularly on complex compositional temporal reasoning tasks.",
+    "是否为团队主导工作": true,
+    "是否已宣发": "已宣发",
+    "期刊/会议": "Under Submission",
+    "记录创建日期": 1781193600000,
+    "论文标题": "IA-RAG: Interval-Algebra-Driven Temporal Reasoning for Dynamic Knowledge Retrieval",
+    "论文状态": "已投稿并挂arXiv",
+    "责任人": [
+      {
+        "email": "caipinlong@pjlab.org.cn",
+        "en_name": "蔡品隆",
+        "id": "ou_138e540bde4fdeed0e45f85615a113cc",
+        "name": "蔡品隆"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2606.06044.png"
   }
 ]
