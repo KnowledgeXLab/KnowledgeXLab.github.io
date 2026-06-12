@@ -31,6 +31,14 @@ description: Get in touch with KnowledgeXLab — collaborations, student applica
       <div class="value"><a href="{{ site.lab_github }}" target="_blank" rel="noopener">{{ site.lab_github }}</a></div>
     </div>
   </div>
+
+  <div class="contact-card">
+    <div class="icon">📕</div>
+    <div>
+      <div class="label">Xiaohongshu</div>
+      <div class="value"><a href="https://www.xiaohongshu.com/user/profile/67867a40000000000801c751" target="_blank" rel="noopener">KnowledgeXLab</a></div>
+    </div>
+  </div>
 </div>
 
 <div class="positions-box">

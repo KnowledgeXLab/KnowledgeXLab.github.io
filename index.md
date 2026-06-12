@@ -49,7 +49,24 @@ research_directions:
   {% for item in site.news limit:5 %}
   <div class="news-item">
     <span class="news-date {% unless forloop.first %}old{% endunless %}">{{ item.date }}</span>
-    <span class="news-text">{{ item.text }}</span>
+    <span class="news-text">
+      {% if item.links %}
+        {% assign remaining_text = item.text %}
+        {% for news_link in item.links %}
+          {% assign news_parts = remaining_text | split: news_link.text %}
+          {{ news_parts[0] }}<a href="{{ news_link.url }}" target="_blank" rel="noopener">{{ news_link.text }}</a>
+          {% assign remaining_text = news_parts[1] %}
+        {% endfor %}
+        {{ remaining_text }}
+      {% elsif item.link and item.link_text %}
+        {% assign news_parts = item.text | split: item.link_text %}
+        {{ news_parts[0] }}<a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.link_text }}</a>{{ news_parts[1] }}
+      {% elsif item.link %}
+        <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.text }}</a>
+      {% else %}
+        {{ item.text }}
+      {% endif %}
+    </span>
   </div>
   {% endfor %}
 </div>

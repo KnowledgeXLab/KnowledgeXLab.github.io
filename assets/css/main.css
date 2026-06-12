@@ -819,7 +819,7 @@ button.pub-link {
   font-size: 1rem; font-weight: 300;
   color: var(--text-secondary);
   margin-bottom: 44px; line-height: 1.75;
-  max-width: 560px;
+  max-width: 640px;
 }
 
 /* ── Responsive ── */

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Team
-description: Meet the KnowledgeXLab team — faculty, PhD students, and master students.
+description: Meet the KnowledgeXLab team — faculty, students, and alumni.
 ---
 
 <h1 class="page-title">Team</h1>
@@ -160,6 +160,44 @@ description: Meet the KnowledgeXLab team — faculty, PhD students, and master s
 <div class="section-label">Joint Ph.D.</div>
 <div class="people-grid">
   {% for person in jointphd %}
+  <div class="person-card">
+    <div class="avatar{% if person.cartoon and person.cartoon != "" %} has-cartoon{% endif %}">
+      {% if person.photo and person.photo != "" %}
+        <img class="photo-real" src="{{ person.photo | relative_url }}" alt="{{ person.name }}">
+      {% else %}
+        {{ person.photo_emoji | default: "👤" }}
+      {% endif %}
+      {% if person.cartoon and person.cartoon != "" %}
+        <img class="photo-cartoon" src="{{ person.cartoon | relative_url }}" alt="{{ person.name }} cartoon">
+      {% endif %}
+    </div>
+    <h3>{{ person.name }}</h3>
+    {% if person.research %}<div class="research">{{ person.research }}</div>{% endif %}
+    <div class="person-links">
+      {% if person.links.homepage and person.links.homepage != "" %}
+        <a href="{{ person.links.homepage }}" class="icon-link" target="_blank" rel="noopener" title="Homepage"><i class="fas fa-house"></i></a>
+      {% endif %}
+      {% if person.links.scholar and person.links.scholar != "" %}
+        <a href="{{ person.links.scholar }}" class="icon-link" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      {% endif %}
+      {% if person.links.github and person.links.github != "" %}
+        <a href="{{ person.links.github }}" class="icon-link" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if person.links.email and person.links.email != "" %}
+        <a href="mailto:{{ person.links.email }}" class="icon-link" title="Email"><i class="fas fa-envelope"></i></a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Alumni -->
+{% assign alumni = site.data.people | where: "role", "Alumni" %}
+{% if alumni.size > 0 %}
+<div class="section-label">Alumni</div>
+<div class="people-grid">
+  {% for person in alumni %}
   <div class="person-card">
     <div class="avatar{% if person.cartoon and person.cartoon != "" %} has-cartoon{% endif %}">
       {% if person.photo and person.photo != "" %}

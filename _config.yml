@@ -25,8 +25,17 @@ nav_links:
 
 # Latest news (shown on home page, most recent first)
 news:
+  - date: "2026.06"
+    text: "EvolveR is accepted at ICML 2026 🎉"
+    link_text: "EvolveR"
+    link: "https://arxiv.org/pdf/2510.16079"
   - date: "2026.04"
-    text: "Two Papers are accepted at ACL 2026 🎉"
+    text: "Two Papers (MUSE, Trainee-Bench) are accepted at ACL 2026 🎉"
+    links:
+      - text: "MUSE"
+        url: "https://arxiv.org/pdf/2510.08002"
+      - text: "Trainee-Bench"
+        url: "https://arxiv.org/pdf/2601.08173"
   - date: "2026.01"
     text: "Three Papers are accepted at ICLR 2026 🎉"
 
