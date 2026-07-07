@@ -604,6 +604,29 @@
     "_thumbnail": "/assets/images/papers/2606.06044.png"
   },
   {
-    "记录创建日期": 1782144000000
+    "Bibtex": "@misc{dong2026assemcadproductionreadycadassembly,\n      title={ASSEMCAD: Production-Ready CAD Assembly Generation from Natural Language}, \n      author={Yurui Dong and Shu Zou and Siqi Li and Nianchen Deng and Hongbin Zhou and Xuemeng Yang and Pinlong Cai and Licheng Wen and Xinyu Cai and Botian Shi},\n      year={2026},\n      eprint={2607.05123},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2607.05123}, \n}",
+    "arXiv主页": {
+      "link": "https://arxiv.org/pdf/2607.05123",
+      "text": "https://arxiv.org/pdf/2607.05123"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Yurui Dong*, Shu Zou*, Siqi Li, Nianchen Deng, Hongbin Zhou, Xuemeng Yang, Pinlong Cai, Licheng Wen, Xinyu Cai^, Botian Shi",
+    "单位信息（每个单位一行，分号换行）": "1 Shanghai Artificial Intelligence Laboratory, 2 Fudan University, 3 Shanghai Innovation Institute 4 The Australian National University, 5 Zhejiang University",
+    "录用类型": [
+      "Preprint"
+    ],
+    "摘要": "Recent advances in large language models and programmatic CAD have significantly improved Text-to-CAD generation for individual parts. However, production-ready mechanical assembly generation remains largely unsolved. Unlike single-part modeling, assemblies require coordinated reasoning over multiple components, functional interfaces, assembly relations, engineering principles, and physical consistency. Consequently, directly generating executable CAD code is insufficient for constructing mechanically valid and reusable assemblies. We present AssemCAD, an axiom-grounded framework for production-ready CAD assembly generation from natural language. Instead of representing an assembly as monolithic CAD code, AssemCAD first constructs an axiomatic Assembly Specification consisting of typed parts, geometry-backed ports, executable mates, and engineering axioms. Each assembly relation is explicitly grounded in one or more engineering principles, making the resulting specification interpretable, reusable, and verifiable. To realize this specification, AssemCAD introduces a port- and mate-based CAD assembly library that executes symbolic assembly relations through deterministic mate transformations and validates declared interfaces using concrete B-Rep geometric evidence. Built on this representation and library, AssemCAD further supports on-demand synthesis of reusable parametric component factories for both standard and open-world geometries. Experiments on AssemBench show that AssemCAD substantially improves assembly preservation and physical validity over code-centric CAD generation baselines, while generalizing across different foundation-model backbones. By combining axiom-grounded assembly reasoning with deterministic geometric execution, AssemCAD extends Text-to-CAD from isolated part generation toward production-ready mechanical assembly design.",
+    "是否为团队主导工作": true,
+    "记录创建日期": 1783353600000,
+    "论文标题": "ASSEMCAD: Production-Ready CAD Assembly Generation from Natural Language",
+    "论文状态": "已挂arXiv",
+    "责任人": [
+      {
+        "email": "caixinyu@pjlab.org.cn",
+        "en_name": "蔡新雨",
+        "id": "ou_61b448e4ccdd233da29d28e88a7069d5",
+        "name": "蔡新雨"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2607.05123.png"
   }
 ]
