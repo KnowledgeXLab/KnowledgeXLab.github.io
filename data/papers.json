@@ -628,5 +628,38 @@
       }
     ],
     "_thumbnail": "/assets/images/papers/2607.05123.png"
+  },
+  {
+    "Github仓库链接": {
+      "link": "https://github.com/KnowledgeXLab/SemFlowRAG",
+      "text": "https://github.com/KnowledgeXLab/SemFlowRAG"
+    },
+    "arXiv主页": {
+      "link": "https://arxiv.org/abs/2606.28447",
+      "text": "https://arxiv.org/abs/2606.28447"
+    },
+    "作者信息（每人一行,分号换行,数字表示单位信息,*表示Equal Contribution, ^表示通讯作者）": "Houyuan Qin, Rong Wu, Qinyuan Qin, Botian Shi, Jingjing Qu, Yang Sun, Pinlong Cai",
+    "单位信息（每个单位一行，分号换行）": "1. Shanghai Artificial Intelligence Laboratory \n2. Zhejiang University \n3. Fudan University",
+    "录用类型": [
+      "Preprint"
+    ],
+    "摘要": "Retrieval-Augmented Generation (RAG) enhanced by Knowledge Graphs has shown promise in complex multi-hop reasoning tasks. However, existing graph-based retrieval methods typically rely on flat, undirected topologies. During the retrieval process, the probability flow often gets trapped in high-degree abstract concept nodes which we define as ``probability black holes'', leading to semantic drift and noise accumulation. To address this, we propose SemFlowRAG, a framework that reconstructs the flat retrieval space into a corpus-adaptive semantic gradient graph. This data-driven self-organization enables a hierarchical structure to emerge naturally from the data distribution, capturing the intrinsic semantic granularity of the corpus to suppress structural noise. By quantifying the semantic abstractness of entities through the embedding variance of their associated passages, we transform static undirected edges into directed semantic constraints. Furthermore, we design an abstractness-guided directed PageRank algorithm that forces the retrieval trajectory to follow a ``high-to-low semantic abstractness'' gradient. This mechanism ensures layer-by-layer evidence convergence, smoothly guiding the retrieval process from abstract concepts to specific document evidence. Extensive experiments on complex QA datasets demonstrate that SemFlowRAG effectively mitigates the ``probability black holes'' issue, outperforming existing baselines in both retrieval and downstream reasoning performance.",
+    "是否为团队主导工作": true,
+    "期刊/会议": "Under Submission",
+    "记录创建日期": 1783440000000,
+    "论文标题": "SemFlowRAG: Directed Semantic Flow from Abstraction to Evidence for Complex Reasoning",
+    "论文状态": "已挂arXiv",
+    "责任人": [
+      {
+        "email": "caipinlong@pjlab.org.cn",
+        "en_name": "蔡品隆",
+        "id": "ou_138e540bde4fdeed0e45f85615a113cc",
+        "name": "蔡品隆"
+      }
+    ],
+    "_thumbnail": "/assets/images/papers/2606.28447.png"
+  },
+  {
+    "记录创建日期": 1783440000000
   }
 ]
