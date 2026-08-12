@@ -536,7 +536,8 @@
         "id": "ou_80e5c8509a8f5d3a8ff9e786499f32f2",
         "name": "毛松"
       }
-    ]
+    ],
+    "_thumbnail": "/assets/images/papers/2507.03262.png"
   },
   {
     "Bibtex": "@article{yang2026spiral,\n  title   = {SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents},\n  author  = {Yang, Yu and Liao, Yue and Mei, Jianbiao and Wang, Baisen and Yang, Xuemeng and Wen, Licheng and Zhang, Jiangning and Li, Xiangtai and Lv, Liang and Chen, Hanlin and Shi, Botian and Liu, Yong and Yan, Shuicheng and Lee, Gim Hee},\n  journal = {arXiv preprint arXiv:2603.08403},\n  year    = {2026}\n}",
